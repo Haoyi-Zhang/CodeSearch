@@ -1,0 +1,9 @@
+{
+  "cpu_seconds": 11.482926272,
+  "elapsed_seconds": 11.483406314000149,
+  "observations": 12474,
+  "peak_rss_kib": 137844,
+  "result": "all retained source receipts, answers and recorded correctness/recall metrics agree with replay",
+  "source_receipts": 28777,
+  "traces": 33
+}

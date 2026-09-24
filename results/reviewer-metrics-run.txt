@@ -1,0 +1,1 @@
+{"merged_rows": 9, "out": "$PROJECT_ROOT/artifact/results/reviewer-metrics.json", "policies": {"certified": 445, "continuation_certificate": 3493, "cut_aware_cache": 3492, "exact_delta_overlay": 3924, "full_coordinator_mirror": 574, "local_only": 571, "prefix_repair": 12, "random_shard": 522, "unsafe_stale": 676, "unverified": 401}, "records": 14110}

@@ -1,0 +1,27 @@
+{
+  "downloaded_cross_check": {
+    "baseline_cached_py_sha256": null,
+    "v7_2_0_cached_py_sha256": null
+  },
+  "post_freeze_audit": {
+    "commit": "3c082c654c2804b9354e4b62dbd2994f1aac464d",
+    "date": "2026-09-16",
+    "included_in_prespecified_result": false,
+    "tag": "v7.2.0",
+    "url": "https://github.com/tkem/cachetools/commit/3c082c654c2804b9354e4b62dbd2994f1aac464d"
+  },
+  "prespecified_baseline": {
+    "commit": "48284d73d0a8834c9c50f8d41bb99e6f93b2dfed",
+    "tag": "v7.1.4",
+    "url": "https://github.com/tkem/cachetools/commit/48284d73d0a8834c9c50f8d41bb99e6f93b2dfed"
+  },
+  "prespecified_head": {
+    "commit": "4500e3d04288738d25acbb4973eb3c3e1bf41db9",
+    "date": "2026-08-31",
+    "tag": "v7.1.8",
+    "url": "https://github.com/tkem/cachetools/commit/4500e3d04288738d25acbb4973eb3c3e1bf41db9"
+  },
+  "reason_not_retrofitted": "preserve the frozen prespecified result and expose the later release as a cutoff audit rather than post-hoc expanding the favorable workload",
+  "repository": "tkem/cachetools",
+  "scope": "function-level projection over the explicitly retained module/history inputs; not a full repository checkout replay"
+}

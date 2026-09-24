@@ -1,0 +1,27 @@
+{
+  "gate_statuses": {
+    "amortization-analysis.json": "MISSING",
+    "baseline-fairness-gate.json": "MISSING",
+    "claim-language-report.json": "MISSING",
+    "code-quality-report.json": "MISSING",
+    "extended-robustness-summary.json": "MISSING",
+    "final-validation-summary.json": "MISSING",
+    "history-cutoff-diff.json": "MISSING",
+    "package-privacy-gate.json": "CHECK",
+    "paired-trace-uncertainty.json": "CHECK",
+    "paper-hardening-check.json": "CHECK",
+    "pdf-visual-preflight.json": "MISSING",
+    "provenance-security-report.json": "MISSING",
+    "query-schedule-fairness.json": "MISSING",
+    "reference-integrity-report.json": "MISSING",
+    "reproducible-pdf-check.json": "MISSING",
+    "reviewer-assumption-gate.json": "MISSING",
+    "reviewer-metrics.json": "CHECK",
+    "reviewer-negative-controls.json": "MISSING"
+  },
+  "pass": false,
+  "pdf_pages": 17,
+  "reference_count": 67,
+  "report": "artifact/FINAL-DELIVERY-REPORT.md",
+  "reviewer_matrix": "artifact/FINAL-REVIEWER-MATRIX.md"
+}

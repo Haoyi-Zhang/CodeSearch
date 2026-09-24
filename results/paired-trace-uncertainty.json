@@ -1,0 +1,8 @@
+{
+  "comparisons": [],
+  "method": "20,000 deterministic paired bootstrap resamples over frozen trace-level differences",
+  "raw_rows": 23,
+  "schema_version": 1,
+  "seed": 20260920,
+  "warning": "Intervals summarize sensitivity to the finite trace set. They are not p-values and do not imply an iid workload population."
+}

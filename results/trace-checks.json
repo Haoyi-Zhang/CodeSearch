@@ -1,0 +1,1652 @@
+[
+  {
+    "alternates": true,
+    "attempts": 1794,
+    "case": "compaction",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 20014,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 240,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 480,
+      "wall_ns": 9465779
+    },
+    "resources": {
+      "cpu_seconds": 0.859951176,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 19,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118340,
+      "wall_seconds": 0.8574850509999123,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "compaction-seed1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1794,
+    "case": "compaction",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 19948,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 240,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 480,
+      "wall_ns": 5857754
+    },
+    "resources": {
+      "cpu_seconds": 0.8346101099999998,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 19,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118308,
+      "wall_seconds": 0.8350196029996368,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "compaction-seed2.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1794,
+    "case": "compaction",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 19722,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 240,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 3993579,
+      "virtual_ms": 480,
+      "wall_ns": 6202894
+    },
+    "resources": {
+      "cpu_seconds": 0.6828625199999998,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 19,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118312,
+      "wall_seconds": 0.6850483640000675,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "compaction-seed3.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2200,
+    "case": "crash",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 3998035,
+      "virtual_ms": 1560,
+      "wall_ns": 29169990
+    },
+    "resources": {
+      "cpu_seconds": 0.8533649240000001,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 9,
+      "peak_rss_kib": 119180,
+      "wall_seconds": 0.8587077880001743,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "crash-seed1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2197,
+    "case": "crash",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68772,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 3996423,
+      "virtual_ms": 1560,
+      "wall_ns": 20199367
+    },
+    "resources": {
+      "cpu_seconds": 0.7917507750000001,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 9,
+      "peak_rss_kib": 119116,
+      "wall_seconds": 0.7922398649998286,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "crash-seed2.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2201,
+    "case": "crash",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68976,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 27083687
+    },
+    "resources": {
+      "cpu_seconds": 0.7700142149999998,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 9,
+      "peak_rss_kib": 119288,
+      "wall_seconds": 0.773371944000246,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "crash-seed3.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "fresh",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 18872097
+    },
+    "resources": {
+      "cpu_seconds": 0.7045883699999997,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118828,
+      "wall_seconds": 0.7114257509997515,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "fresh-seed1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "fresh",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68772,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 4590579,
+      "virtual_ms": 1560,
+      "wall_ns": 22217547
+    },
+    "resources": {
+      "cpu_seconds": 0.7307826879999999,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118800,
+      "wall_seconds": 0.7366868029998841,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "fresh-seed2.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "fresh",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68976,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 3999608,
+      "virtual_ms": 1560,
+      "wall_ns": 17974375
+    },
+    "resources": {
+      "cpu_seconds": 0.7399701430000001,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118756,
+      "wall_seconds": 0.7407990719998452,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "fresh-seed3.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1592,
+    "case": "hot-shard",
+    "length": 1,
+    "queries": 63,
+    "repair": {
+      "bytes": 29648,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        7,
+        7
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 332,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 496,
+      "wall_ns": 8250408
+    },
+    "resources": {
+      "cpu_seconds": 0.47593628100000007,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 117476,
+      "wall_seconds": 0.47869195099974604,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "hot-shard-seed1-prefix1.json.gz",
+    "update_events": 77,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1592,
+    "case": "hot-shard",
+    "length": 16,
+    "queries": 63,
+    "repair": {
+      "bytes": 29648,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        7,
+        7
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 332,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 496,
+      "wall_ns": 11168784
+    },
+    "resources": {
+      "cpu_seconds": 0.5794238109999998,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118128,
+      "wall_seconds": 0.5805823329997111,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "hot-shard-seed1-prefix16.json.gz",
+    "update_events": 77,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1592,
+    "case": "hot-shard",
+    "length": 5,
+    "queries": 63,
+    "repair": {
+      "bytes": 29648,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        7,
+        7
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 332,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 496,
+      "wall_ns": 8591862
+    },
+    "resources": {
+      "cpu_seconds": 0.6335062020000002,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 117732,
+      "wall_seconds": 0.6371268120001332,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "hot-shard-seed1-prefix5.json.gz",
+    "update_events": 77,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1592,
+    "case": "hot-shard",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 29648,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        7,
+        7
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 332,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 496,
+      "wall_ns": 7957516
+    },
+    "resources": {
+      "cpu_seconds": 0.527973231,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 117828,
+      "wall_seconds": 0.5261815180001577,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "hot-shard-seed1.json.gz",
+    "update_events": 77,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1592,
+    "case": "hot-shard",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 29356,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        7,
+        7
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 332,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 4000670,
+      "virtual_ms": 496,
+      "wall_ns": 8618292
+    },
+    "resources": {
+      "cpu_seconds": 0.571054868,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 117800,
+      "wall_seconds": 0.5724749740002153,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "hot-shard-seed2.json.gz",
+    "update_events": 77,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1592,
+    "case": "hot-shard",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 29338,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        7,
+        7
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 332,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 496,
+      "wall_ns": 8652173
+    },
+    "resources": {
+      "cpu_seconds": 0.49084528900000013,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 117748,
+      "wall_seconds": 0.4889823379999143,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "hot-shard-seed3.json.gz",
+    "update_events": 77,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": false,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 20336834
+    },
+    "resources": {
+      "cpu_seconds": 0.8434604440000002,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118948,
+      "wall_seconds": 0.8467504059999555,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "index-lag-seed1-base-plan.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 1,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 30446462
+    },
+    "resources": {
+      "cpu_seconds": 1.171455845,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118616,
+      "wall_seconds": 1.1795073520002006,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "index-lag-seed1-prefix1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 16,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 20162652
+    },
+    "resources": {
+      "cpu_seconds": 1.199935612,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 119212,
+      "wall_seconds": 1.2079784329998802,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "index-lag-seed1-prefix16.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 32,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 4316460,
+      "virtual_ms": 1560,
+      "wall_ns": 21249529
+    },
+    "resources": {
+      "cpu_seconds": 0.775153556,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 119812,
+      "wall_seconds": 0.7740849419997176,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "index-lag-seed1-prefix32.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 5,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 3745099,
+      "virtual_ms": 1560,
+      "wall_ns": 30440463
+    },
+    "resources": {
+      "cpu_seconds": 1.334484022,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118832,
+      "wall_seconds": 1.3351503270000649,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "index-lag-seed1-prefix5.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 64,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 17653041
+    },
+    "resources": {
+      "cpu_seconds": 0.7919382889999997,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 120620,
+      "wall_seconds": 0.7933098109997445,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "index-lag-seed1-prefix64.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 20960603
+    },
+    "resources": {
+      "cpu_seconds": 0.727736478,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118984,
+      "wall_seconds": 0.7275319430000309,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "index-lag-seed1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68772,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 18016588
+    },
+    "resources": {
+      "cpu_seconds": 0.6758839760000002,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 118916,
+      "wall_seconds": 0.6732839709998188,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "index-lag-seed2.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2046,
+    "case": "index-lag",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68976,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 18024761
+    },
+    "resources": {
+      "cpu_seconds": 0.6538808089999999,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 119088,
+      "wall_seconds": 0.656979543000034,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "index-lag-seed3.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 2086,
+    "case": "log-gap",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 3872158,
+      "virtual_ms": 1560,
+      "wall_ns": 19142575
+    },
+    "resources": {
+      "cpu_seconds": 0.8598498709999998,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 5,
+      "peak_rss_kib": 118944,
+      "wall_seconds": 0.8578876239998863,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "log-gap-seed1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 842
+  },
+  {
+    "alternates": true,
+    "attempts": 2086,
+    "case": "log-gap",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68772,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 7937433,
+      "virtual_ms": 1560,
+      "wall_ns": 19167793
+    },
+    "resources": {
+      "cpu_seconds": 0.8389375039999998,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 5,
+      "peak_rss_kib": 118928,
+      "wall_seconds": 0.8400655830000687,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "log-gap-seed2.json.gz",
+    "update_events": 189,
+    "verified_receipts": 842
+  },
+  {
+    "alternates": true,
+    "attempts": 2086,
+    "case": "log-gap",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68976,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 7999887,
+      "virtual_ms": 1560,
+      "wall_ns": 21411353
+    },
+    "resources": {
+      "cpu_seconds": 0.7063272650000001,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 5,
+      "peak_rss_kib": 118852,
+      "wall_seconds": 0.7074649450000834,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "log-gap-seed3.json.gz",
+    "update_events": 189,
+    "verified_receipts": 842
+  },
+  {
+    "alternates": true,
+    "attempts": 2355,
+    "case": "partition",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68688,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 4000199,
+      "virtual_ms": 1560,
+      "wall_ns": 18109619
+    },
+    "resources": {
+      "cpu_seconds": 0.7728979519999999,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 17,
+      "peak_rss_kib": 119052,
+      "wall_seconds": 0.7736886589996175,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "partition-seed1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 812
+  },
+  {
+    "alternates": true,
+    "attempts": 2356,
+    "case": "partition",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68772,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 1560,
+      "wall_ns": 21476371
+    },
+    "resources": {
+      "cpu_seconds": 0.794620334,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 17,
+      "peak_rss_kib": 119080,
+      "wall_seconds": 0.7959920499997679,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "partition-seed2.json.gz",
+    "update_events": 189,
+    "verified_receipts": 811
+  },
+  {
+    "alternates": true,
+    "attempts": 2353,
+    "case": "partition",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 68976,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 780,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 4000079,
+      "virtual_ms": 1560,
+      "wall_ns": 28261421
+    },
+    "resources": {
+      "cpu_seconds": 0.7919506170000001,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 63,
+      "peak_pending_events": 17,
+      "peak_rss_kib": 119052,
+      "wall_seconds": 0.7912571769998067,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "partition-seed3.json.gz",
+    "update_events": 189,
+    "verified_receipts": 814
+  },
+  {
+    "alternates": true,
+    "attempts": 1854,
+    "case": "rebalance",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 33952,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 396,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 792,
+      "wall_ns": 23253047
+    },
+    "resources": {
+      "cpu_seconds": 0.9894145469999998,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 31,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 120028,
+      "wall_seconds": 0.9923326739999538,
+      "workers": 1
+    },
+    "seed": 1,
+    "trace": "rebalance-seed1.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1854,
+    "case": "rebalance",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 34162,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 396,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 792,
+      "wall_ns": 11942299
+    },
+    "resources": {
+      "cpu_seconds": 0.770414207,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 31,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 119868,
+      "wall_seconds": 0.7743933659999129,
+      "workers": 1
+    },
+    "seed": 2,
+    "trace": "rebalance-seed2.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  },
+  {
+    "alternates": true,
+    "attempts": 1854,
+    "case": "rebalance",
+    "length": 8,
+    "queries": 63,
+    "repair": {
+      "bytes": 33772,
+      "converged_replicas": 6,
+      "cut": [
+        63,
+        63,
+        63
+      ],
+      "dropped_requests_or_replies": 0,
+      "messages": 396,
+      "pending_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_events_after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "server_cpu_ns": 0,
+      "virtual_ms": 792,
+      "wall_ns": 10374117
+    },
+    "resources": {
+      "cpu_seconds": 0.9949551580000002,
+      "logical_tcp_nodes": 6,
+      "peak_journal_events": 31,
+      "peak_pending_events": 1,
+      "peak_rss_kib": 120004,
+      "wall_seconds": 1.0013981050001348,
+      "workers": 1
+    },
+    "seed": 3,
+    "trace": "rebalance-seed3.json.gz",
+    "update_events": 189,
+    "verified_receipts": 882
+  }
+]

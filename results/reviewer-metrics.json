@@ -1,0 +1,678 @@
+{
+  "coverage": {
+    "families": {
+      "cold_query": {
+        "certified": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 43.52307692307692,
+          "median_client_payload_bytes": 44.0,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 44,
+          "records": 130
+        },
+        "exact_delta_overlay": {
+          "max_client_payload_bytes": 43,
+          "mean_client_payload_bytes": 43.0,
+          "median_client_payload_bytes": 43.0,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 43,
+          "records": 80
+        },
+        "local_only": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 44.0,
+          "median_client_payload_bytes": 44.0,
+          "min_client_payload_bytes": 44,
+          "p95_client_payload_bytes": 44,
+          "records": 144
+        },
+        "random_shard": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 44.0,
+          "median_client_payload_bytes": 44.0,
+          "min_client_payload_bytes": 44,
+          "p95_client_payload_bytes": 44,
+          "records": 136
+        },
+        "unsafe_stale": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 44.0,
+          "median_client_payload_bytes": 44.0,
+          "min_client_payload_bytes": 44,
+          "p95_client_payload_bytes": 44,
+          "records": 88
+        },
+        "unverified": {
+          "max_client_payload_bytes": 43,
+          "mean_client_payload_bytes": 43.0,
+          "median_client_payload_bytes": 43.0,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 43,
+          "records": 80
+        }
+      },
+      "continuation_main": {
+        "continuation_certificate": {
+          "max_client_payload_bytes": 598,
+          "mean_client_payload_bytes": 457.63109954456735,
+          "median_client_payload_bytes": 477.0,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 560,
+          "records": 3074
+        },
+        "cut_aware_cache": {
+          "max_client_payload_bytes": 571,
+          "mean_client_payload_bytes": 429.51479674796747,
+          "median_client_payload_bytes": 447,
+          "min_client_payload_bytes": 40,
+          "p95_client_payload_bytes": 533,
+          "records": 3075
+        },
+        "exact_delta_overlay": {
+          "max_client_payload_bytes": 571,
+          "mean_client_payload_bytes": 429.51382113821137,
+          "median_client_payload_bytes": 447,
+          "min_client_payload_bytes": 40,
+          "p95_client_payload_bytes": 533,
+          "records": 3075
+        },
+        "full_coordinator_mirror": {
+          "max_client_payload_bytes": 531,
+          "mean_client_payload_bytes": 369.9477351916376,
+          "median_client_payload_bytes": 405.0,
+          "min_client_payload_bytes": 11,
+          "p95_client_payload_bytes": 488,
+          "records": 574
+        },
+        "unsafe_stale": {
+          "max_client_payload_bytes": 496,
+          "mean_client_payload_bytes": 367.091743119266,
+          "median_client_payload_bytes": 405.0,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 496,
+          "records": 218
+        }
+      },
+      "real_history": {
+        "continuation_certificate": {
+          "max_client_payload_bytes": 620,
+          "mean_client_payload_bytes": 461.9064748201439,
+          "median_client_payload_bytes": 486,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 549,
+          "records": 417
+        },
+        "cut_aware_cache": {
+          "max_client_payload_bytes": 594,
+          "mean_client_payload_bytes": 436.08153477218224,
+          "median_client_payload_bytes": 459,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 522,
+          "records": 417
+        },
+        "exact_delta_overlay": {
+          "max_client_payload_bytes": 596,
+          "mean_client_payload_bytes": 437.4066985645933,
+          "median_client_payload_bytes": 460.5,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 523,
+          "records": 418
+        },
+        "unsafe_stale": {
+          "max_client_payload_bytes": 556,
+          "mean_client_payload_bytes": 363.961038961039,
+          "median_client_payload_bytes": 418,
+          "min_client_payload_bytes": 11,
+          "p95_client_payload_bytes": 483,
+          "records": 77
+        }
+      },
+      "unclassified": {
+        "certified": {
+          "max_client_payload_bytes": 45,
+          "mean_client_payload_bytes": 43.19047619047619,
+          "median_client_payload_bytes": 43,
+          "min_client_payload_bytes": 43,
+          "p95_client_payload_bytes": 44,
+          "records": 315
+        },
+        "continuation_certificate": {
+          "max_client_payload_bytes": 17,
+          "mean_client_payload_bytes": 17.0,
+          "median_client_payload_bytes": 17.0,
+          "min_client_payload_bytes": 17,
+          "p95_client_payload_bytes": 17,
+          "records": 2
+        },
+        "exact_delta_overlay": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 41.39316239316239,
+          "median_client_payload_bytes": 43,
+          "min_client_payload_bytes": 15,
+          "p95_client_payload_bytes": 44,
+          "records": 351
+        },
+        "local_only": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 44.0,
+          "median_client_payload_bytes": 44,
+          "min_client_payload_bytes": 44,
+          "p95_client_payload_bytes": 44,
+          "records": 427
+        },
+        "prefix_repair": {
+          "max_client_payload_bytes": 17,
+          "mean_client_payload_bytes": 16.833333333333332,
+          "median_client_payload_bytes": 17.0,
+          "min_client_payload_bytes": 16,
+          "p95_client_payload_bytes": 17,
+          "records": 12
+        },
+        "random_shard": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 44.0,
+          "median_client_payload_bytes": 44.0,
+          "min_client_payload_bytes": 44,
+          "p95_client_payload_bytes": 44,
+          "records": 386
+        },
+        "unsafe_stale": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 43.39249146757679,
+          "median_client_payload_bytes": 44,
+          "min_client_payload_bytes": 34,
+          "p95_client_payload_bytes": 44,
+          "records": 293
+        },
+        "unverified": {
+          "max_client_payload_bytes": 44,
+          "mean_client_payload_bytes": 41.15576323987539,
+          "median_client_payload_bytes": 43,
+          "min_client_payload_bytes": 15,
+          "p95_client_payload_bytes": 44,
+          "records": 321
+        }
+      }
+    },
+    "files": [
+      {
+        "file": "docs/expected_continuation_semantics.json",
+        "records": 5
+      },
+      {
+        "file": "docs/expected_real_history_semantics.json",
+        "records": 4
+      },
+      {
+        "file": "docs/expected_semantics.json",
+        "records": 45
+      },
+      {
+        "file": "docs/resource-ledger.json",
+        "records": 2
+      },
+      {
+        "file": "results/continuation-summary.json",
+        "records": 5
+      },
+      {
+        "file": "results/continuation-traces/continuation-crash-seed2-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-crash-seed3-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-fresh-seed2-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-fresh-seed3-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-index-lag-seed2-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-index-lag-seed3-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-log-gap-seed2-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-log-gap-seed3-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-partition-seed2-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-partition-seed3-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-rebalance-seed2-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/continuation-traces/continuation-rebalance-seed3-capacity5.json.gz",
+        "records": 2520
+      },
+      {
+        "file": "results/finite-receipts.json",
+        "records": 12
+      },
+      {
+        "file": "results/pilot.json",
+        "records": 3
+      },
+      {
+        "file": "results/real-history-summary.json",
+        "records": 4
+      },
+      {
+        "file": "results/real-history-trace.json.gz",
+        "records": 3269
+      },
+      {
+        "file": "results/summary.json",
+        "records": 45
+      },
+      {
+        "file": "results/traces/compaction-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/compaction-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/compaction-seed3.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/crash-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/crash-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/crash-seed3.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/fresh-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/fresh-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/fresh-seed3.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/hot-shard-seed1-prefix1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/hot-shard-seed1-prefix16.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/hot-shard-seed1-prefix5.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/hot-shard-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/hot-shard-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/hot-shard-seed3.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed1-base-plan.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed1-prefix1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed1-prefix16.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed1-prefix32.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed1-prefix5.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed1-prefix64.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/index-lag-seed3.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/log-gap-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/log-gap-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/log-gap-seed3.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/partition-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/partition-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/partition-seed3.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/rebalance-seed1.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/rebalance-seed2.json.gz",
+        "records": 378
+      },
+      {
+        "file": "results/traces/rebalance-seed3.json.gz",
+        "records": 378
+      }
+    ],
+    "policies": {
+      "certified": {
+        "max_client_payload_bytes": 45,
+        "mean_client_payload_bytes": 43.2876404494382,
+        "median_client_payload_bytes": 43,
+        "min_client_payload_bytes": 43,
+        "p95_client_payload_bytes": 44,
+        "records": 445
+      },
+      "continuation_certificate": {
+        "max_client_payload_bytes": 620,
+        "mean_client_payload_bytes": 457.88920698539937,
+        "median_client_payload_bytes": 477,
+        "min_client_payload_bytes": 17,
+        "p95_client_payload_bytes": 559,
+        "records": 3493
+      },
+      "cut_aware_cache": {
+        "max_client_payload_bytes": 594,
+        "mean_client_payload_bytes": 430.29896907216494,
+        "median_client_payload_bytes": 449.0,
+        "min_client_payload_bytes": 40,
+        "p95_client_payload_bytes": 532,
+        "records": 3492
+      },
+      "exact_delta_overlay": {
+        "max_client_payload_bytes": 596,
+        "mean_client_payload_bytes": 387.7573904179409,
+        "median_client_payload_bytes": 443.5,
+        "min_client_payload_bytes": 15,
+        "p95_client_payload_bytes": 518,
+        "records": 3924
+      },
+      "full_coordinator_mirror": {
+        "max_client_payload_bytes": 531,
+        "mean_client_payload_bytes": 369.9477351916376,
+        "median_client_payload_bytes": 405.0,
+        "min_client_payload_bytes": 11,
+        "p95_client_payload_bytes": 488,
+        "records": 574
+      },
+      "local_only": {
+        "max_client_payload_bytes": 44,
+        "mean_client_payload_bytes": 44.0,
+        "median_client_payload_bytes": 44,
+        "min_client_payload_bytes": 44,
+        "p95_client_payload_bytes": 44,
+        "records": 571
+      },
+      "prefix_repair": {
+        "max_client_payload_bytes": 17,
+        "mean_client_payload_bytes": 16.833333333333332,
+        "median_client_payload_bytes": 17.0,
+        "min_client_payload_bytes": 16,
+        "p95_client_payload_bytes": 17,
+        "records": 12
+      },
+      "random_shard": {
+        "max_client_payload_bytes": 44,
+        "mean_client_payload_bytes": 44.0,
+        "median_client_payload_bytes": 44.0,
+        "min_client_payload_bytes": 44,
+        "p95_client_payload_bytes": 44,
+        "records": 522
+      },
+      "unsafe_stale": {
+        "max_client_payload_bytes": 556,
+        "mean_client_payload_bytes": 184.37426035502958,
+        "median_client_payload_bytes": 44.0,
+        "min_client_payload_bytes": 11,
+        "p95_client_payload_bytes": 464,
+        "records": 676
+      },
+      "unverified": {
+        "max_client_payload_bytes": 44,
+        "mean_client_payload_bytes": 41.52369077306733,
+        "median_client_payload_bytes": 43,
+        "min_client_payload_bytes": 15,
+        "p95_client_payload_bytes": 44,
+        "records": 401
+      }
+    },
+    "raw_records": 14110
+  },
+  "definition": {
+    "client_payload_bytes": "exact UTF-8 byte length of canonical compact JSON containing client-visible result/status/certificate fields found in frozen raw records; oracle, debug, timing, and measurement fields are excluded",
+    "end_to_end_application_bytes": "source-facing bytes plus coordinator-to-client canonical payload bytes; excludes TCP/IP/TLS headers and one-time process startup",
+    "source_facing_bytes": "application-layer request plus response bytes recorded by the source RPC instrumentation",
+    "state_bytes": "reported separately; never added to traffic"
+  },
+  "merged_policy_rows": [
+    {
+      "family": "continuation_main",
+      "max_client_payload_bytes": 598,
+      "max_logical_state_bytes": 60078,
+      "mean_client_payload_bytes": 457.63109954456735,
+      "mean_end_to_end_application_bytes": 811.472589844391,
+      "mean_source_bytes": 353.84149029982365,
+      "mean_source_messages": 1.8606701940035273,
+      "median_client_payload_bytes": 477.0,
+      "median_logical_state_bytes": 57141.0,
+      "min_client_payload_bytes": 43,
+      "p95_client_payload_bytes": 560,
+      "policy": "continuation_certificate",
+      "queries": 4536,
+      "records": 3074,
+      "summary_file": "results/continuation-summary.json",
+      "total_source_bytes": 1605025,
+      "total_source_messages": 8440
+    },
+    {
+      "family": "continuation_main",
+      "max_client_payload_bytes": 571,
+      "max_logical_state_bytes": 18237,
+      "mean_client_payload_bytes": 429.51479674796747,
+      "mean_end_to_end_application_bytes": 2506.4012605927646,
+      "mean_source_bytes": 2076.886463844797,
+      "mean_source_messages": 5.851851851851852,
+      "median_client_payload_bytes": 447,
+      "median_logical_state_bytes": 18037.0,
+      "min_client_payload_bytes": 40,
+      "p95_client_payload_bytes": 533,
+      "policy": "cut_aware_cache",
+      "queries": 4536,
+      "records": 3075,
+      "summary_file": "results/continuation-summary.json",
+      "total_source_bytes": 9420757,
+      "total_source_messages": 26544
+    },
+    {
+      "family": "continuation_main",
+      "max_client_payload_bytes": 531,
+      "max_logical_state_bytes": 1735030,
+      "mean_client_payload_bytes": 369.9477351916376,
+      "mean_end_to_end_application_bytes": 1099.0570826343185,
+      "mean_source_bytes": 729.1093474426808,
+      "mean_source_messages": 1.4426807760141094,
+      "median_client_payload_bytes": 405.0,
+      "median_logical_state_bytes": 1735030.0,
+      "min_client_payload_bytes": 11,
+      "p95_client_payload_bytes": 488,
+      "policy": "full_coordinator_mirror",
+      "queries": 4536,
+      "records": 574,
+      "summary_file": "results/continuation-summary.json",
+      "total_source_bytes": 3307240,
+      "total_source_messages": 6544
+    },
+    {
+      "family": "continuation_main",
+      "max_client_payload_bytes": 571,
+      "mean_client_payload_bytes": 429.51382113821137,
+      "mean_end_to_end_application_bytes": 2586.6877629371534,
+      "mean_source_bytes": 2157.173941798942,
+      "mean_source_messages": 6.070546737213404,
+      "median_client_payload_bytes": 447,
+      "min_client_payload_bytes": 40,
+      "p95_client_payload_bytes": 533,
+      "policy": "exact_delta_overlay",
+      "queries": 4536,
+      "records": 3075,
+      "summary_file": "results/continuation-summary.json",
+      "total_source_bytes": 9784941,
+      "total_source_messages": 27536
+    },
+    {
+      "family": "continuation_main",
+      "max_client_payload_bytes": 496,
+      "mean_client_payload_bytes": 367.091743119266,
+      "mean_end_to_end_application_bytes": 367.091743119266,
+      "mean_source_bytes": 0.0,
+      "mean_source_messages": 0.0,
+      "median_client_payload_bytes": 405.0,
+      "min_client_payload_bytes": 43,
+      "p95_client_payload_bytes": 496,
+      "policy": "unsafe_stale",
+      "queries": 4536,
+      "records": 218,
+      "summary_file": "results/continuation-summary.json",
+      "total_source_bytes": 0,
+      "total_source_messages": 0
+    },
+    {
+      "changed_oracle_queries": 10,
+      "family": "real_history",
+      "max_client_payload_bytes": 620,
+      "max_logical_state_bytes": 145912,
+      "mean_client_payload_bytes": 461.9064748201439,
+      "mean_end_to_end_application_bytes": 861.9751022711243,
+      "mean_source_bytes": 400.0686274509804,
+      "mean_source_messages": 1.0294117647058822,
+      "median_client_payload_bytes": 486,
+      "min_client_payload_bytes": 43,
+      "p95_client_payload_bytes": 549,
+      "policy": "continuation_certificate",
+      "queries": 408,
+      "records": 417,
+      "summary_file": "results/real-history-summary.json",
+      "total_source_bytes": 163228,
+      "total_source_messages": 420
+    },
+    {
+      "changed_oracle_queries": 10,
+      "family": "real_history",
+      "max_client_payload_bytes": 594,
+      "max_logical_state_bytes": 75176,
+      "mean_client_payload_bytes": 436.08153477218224,
+      "mean_end_to_end_application_bytes": 1450.625652419241,
+      "mean_source_bytes": 1014.5441176470588,
+      "mean_source_messages": 2.6666666666666665,
+      "median_client_payload_bytes": 459,
+      "min_client_payload_bytes": 43,
+      "p95_client_payload_bytes": 522,
+      "policy": "cut_aware_cache",
+      "queries": 408,
+      "records": 417,
+      "summary_file": "results/real-history-summary.json",
+      "total_source_bytes": 413934,
+      "total_source_messages": 1088
+    },
+    {
+      "changed_oracle_queries": 10,
+      "family": "real_history",
+      "max_client_payload_bytes": 596,
+      "mean_client_payload_bytes": 437.4066985645933,
+      "mean_end_to_end_application_bytes": 2631.0194436626325,
+      "mean_source_bytes": 2193.6127450980393,
+      "mean_source_messages": 6.0,
+      "median_client_payload_bytes": 460.5,
+      "min_client_payload_bytes": 43,
+      "p95_client_payload_bytes": 523,
+      "policy": "exact_delta_overlay",
+      "queries": 408,
+      "records": 418,
+      "summary_file": "results/real-history-summary.json",
+      "total_source_bytes": 894994,
+      "total_source_messages": 2448
+    },
+    {
+      "changed_oracle_queries": 10,
+      "family": "real_history",
+      "max_client_payload_bytes": 556,
+      "mean_client_payload_bytes": 363.961038961039,
+      "mean_end_to_end_application_bytes": 363.961038961039,
+      "mean_source_bytes": 0.0,
+      "mean_source_messages": 0.0,
+      "median_client_payload_bytes": 418,
+      "min_client_payload_bytes": 11,
+      "p95_client_payload_bytes": 483,
+      "policy": "unsafe_stale",
+      "queries": 408,
+      "records": 77,
+      "summary_file": "results/real-history-summary.json",
+      "total_source_bytes": 0,
+      "total_source_messages": 0
+    }
+  ],
+  "schema_version": 1,
+  "warnings": []
+}

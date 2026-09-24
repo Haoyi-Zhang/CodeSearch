@@ -1,0 +1,2 @@
+{"command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "exit_code": 0, "wall_seconds": 2.5277380410000205, "cpu_seconds": 2.841808, "log": "results/continuation-reproduction-logs/command-01.txt"}
+{"command": ["python", "finite_continuation.py"], "exit_code": 0, "wall_seconds": 5.384806347999984, "cpu_seconds": 5.778639, "log": "results/continuation-reproduction-logs/command-02.txt"}

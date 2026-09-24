@@ -1,0 +1,73 @@
+{
+  "cache_files": [],
+  "hits": [
+    {
+      "file": "artifact/sanitize_release_metadata.py",
+      "needle": "$WORK_ROOT"
+    },
+    {
+      "file": "artifact/sanitize_release_metadata.py",
+      "needle": "$HOME"
+    },
+    {
+      "file": "artifact/generate_reviewer_hardening.py",
+      "needle": "$WORK_ROOT"
+    },
+    {
+      "file": "artifact/package_privacy_gate.py",
+      "needle": "$WORK_ROOT"
+    },
+    {
+      "file": "artifact/package_privacy_gate.py",
+      "needle": "$HOME"
+    },
+    {
+      "file": "artifact/package_privacy_gate.py",
+      "needle": "BEGIN OPENSSH PRIVATE KEY"
+    },
+    {
+      "file": "artifact/package_privacy_gate.py",
+      "needle": "BEGIN RSA PRIVATE KEY"
+    }
+  ],
+  "nested_archives": [
+    "artifact/results/real-history-trace.json.gz",
+    "artifact/results/traces/index-lag-seed1-base-plan.json.gz",
+    "artifact/results/traces/rebalance-seed3.json.gz",
+    "artifact/results/traces/crash-seed2.json.gz",
+    "artifact/results/traces/hot-shard-seed3.json.gz",
+    "artifact/results/traces/index-lag-seed1-prefix16.json.gz",
+    "artifact/results/traces/fresh-seed1.json.gz",
+    "artifact/results/traces/compaction-seed3.json.gz",
+    "artifact/results/traces/partition-seed1.json.gz",
+    "artifact/results/traces/partition-seed3.json.gz",
+    "artifact/results/traces/index-lag-seed1-prefix32.json.gz",
+    "artifact/results/traces/fresh-seed3.json.gz",
+    "artifact/results/traces/hot-shard-seed1-prefix1.json.gz",
+    "artifact/results/traces/compaction-seed1.json.gz",
+    "artifact/results/traces/crash-seed1.json.gz",
+    "artifact/results/traces/index-lag-seed1-prefix5.json.gz",
+    "artifact/results/traces/log-gap-seed1.json.gz",
+    "artifact/results/traces/rebalance-seed1.json.gz",
+    "artifact/results/traces/compaction-seed2.json.gz",
+    "artifact/results/traces/index-lag-seed3.json.gz",
+    "artifact/results/traces/hot-shard-seed1-prefix16.json.gz",
+    "artifact/results/traces/index-lag-seed1-prefix1.json.gz",
+    "artifact/results/traces/log-gap-seed3.json.gz",
+    "artifact/results/traces/index-lag-seed2.json.gz",
+    "artifact/results/traces/hot-shard-seed1-prefix5.json.gz",
+    "artifact/results/traces/hot-shard-seed2.json.gz",
+    "artifact/results/traces/partition-seed2.json.gz",
+    "artifact/results/traces/log-gap-seed2.json.gz",
+    "artifact/results/traces/rebalance-seed2.json.gz",
+    "artifact/results/traces/fresh-seed2.json.gz",
+    "artifact/results/traces/crash-seed3.json.gz",
+    "artifact/results/traces/hot-shard-seed1.json.gz",
+    "artifact/results/traces/index-lag-seed1.json.gz",
+    "artifact/results/traces/index-lag-seed1-prefix64.json.gz",
+    "artifact/results/continuation-traces/continuation-fresh-seed3-capacity5.json.gz",
+    "artifact/results/continuation-traces/continuation-fresh-seed2-capacity5.json.gz"
+  ],
+  "pass": false,
+  "symlinks": []
+}
