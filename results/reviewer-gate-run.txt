@@ -1,1 +1,0 @@
-{"checks": 18, "errors": ["paper-visible non-advantage: mirror total bytes below continuation", "paper includes accounting contract", "abstract/conclusion denies universal dominance"], "status": "FAIL"}

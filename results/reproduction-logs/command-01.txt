@@ -1,4 +1,11 @@
 Command: python -m unittest discover -s tests -v
+test_event_epoch_and_rollback_are_rejected (test_checker_transactions.TransactionTests.test_event_epoch_and_rollback_are_rejected) ... ok
+test_failed_advance_then_valid_retry (test_checker_transactions.TransactionTests.test_failed_advance_then_valid_retry) ... ok
+test_failed_batch_then_valid_retry (test_checker_transactions.TransactionTests.test_failed_batch_then_valid_retry) ... ok
+test_failed_repair_then_valid_retry (test_checker_transactions.TransactionTests.test_failed_repair_then_valid_retry) ... ok
+test_partial_compaction_is_not_committed (test_checker_transactions.TransactionTests.test_partial_compaction_is_not_committed) ... ok
+test_rebound_plan_and_k_are_rejected_without_mutation (test_checker_transactions.TransactionTests.test_rebound_plan_and_k_are_rejected_without_mutation) ... ok
+test_tail_identity_is_conservative_not_necessary (test_checker_transactions.TransactionTests.test_tail_identity_is_conservative_not_necessary) ... ok
 test_continuation_checker_has_no_producer_imports (test_protocol.ContinuationPureTests.test_continuation_checker_has_no_producer_imports) ... ok
 test_equal_rank_tail_is_a_blocker (test_protocol.ContinuationPureTests.test_equal_rank_tail_is_a_blocker) ... ok
 test_feed_compaction_preserves_future_coverage (test_protocol.ContinuationPureTests.test_feed_compaction_preserves_future_coverage) ... ok
@@ -44,6 +51,6 @@ test_parser_rejects_duplicate_bib_key (test_release_validation.ReleaseValidation
 test_reference_ledgers_close_without_paper (test_release_validation.ReleaseValidationTest.test_reference_ledgers_close_without_paper) ... ok
 
 ----------------------------------------------------------------------
-Ran 43 tests in 1.796s
+Ran 50 tests in 1.773s
 
 OK

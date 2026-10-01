@@ -6,7 +6,7 @@
     "stage_workers": 1,
     "workers": 2
   },
-  "child_cpu_seconds": 164.32769,
+  "child_cpu_seconds": 169.197889,
   "commands": [
     {
       "command": [
@@ -18,48 +18,48 @@
         "tests",
         "-v"
       ],
-      "cpu_seconds": 2.829411,
+      "cpu_seconds": 3.0532069999999996,
       "exit_code": 0,
       "log": "results/continuation-reproduction-logs/command-01.txt",
-      "wall_seconds": 2.4906645250000565
+      "wall_seconds": 2.688164927999992
     },
     {
       "command": [
         "python",
         "finite_continuation.py"
       ],
-      "cpu_seconds": 5.725000999999999,
+      "cpu_seconds": 5.9309,
       "exit_code": 0,
       "log": "results/continuation-reproduction-logs/command-02.txt",
-      "wall_seconds": 5.333180396999978
+      "wall_seconds": 5.5941360699999905
     },
     {
       "command": [
         "python",
         "continuation_batch.py"
       ],
-      "cpu_seconds": 134.246874,
+      "cpu_seconds": 140.639953,
       "exit_code": 0,
       "log": "results/continuation-reproduction-logs/command-03.txt",
-      "wall_seconds": 65.39508554899999
+      "wall_seconds": 68.92969242200002
     },
     {
       "command": [
         "python",
         "analyze_continuation.py"
       ],
-      "cpu_seconds": 21.526403999999985,
+      "cpu_seconds": 19.573829000000018,
       "exit_code": 0,
       "log": "results/continuation-reproduction-logs/command-04.txt",
-      "wall_seconds": 21.250801949000106
+      "wall_seconds": 19.280982870999992
     }
   ],
   "driver_rss_kib": 92712,
   "error": null,
-  "maximum_child_rss_kib": 502040,
+  "maximum_child_rss_kib": 502024,
   "meaning": "command success plus frozen finite/semantic/wire outcomes; not production or novelty validation",
-  "parent_cpu_seconds": 0.105528607,
+  "parent_cpu_seconds": 0.10621087299999998,
   "scope": "unit tests, finite token cases, 18 primary traces, eight development traces, and independent source/checker replay; test, finite, batch, and analysis stages are sequential, while the batch uses at most two independent trace workers",
   "status": "PASS",
-  "wall_seconds": 94.4714466439998
+  "wall_seconds": 96.49511623199999
 }

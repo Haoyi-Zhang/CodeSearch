@@ -4,7 +4,7 @@
     "overall_deadline_seconds": 180,
     "workers": 3
   },
-  "child_cpu_seconds": 115.44,
+  "child_cpu_seconds": 102.92999999999999,
   "commands": [
     {
       "command": [
@@ -16,22 +16,22 @@
         "tests",
         "-v"
       ],
-      "cpu_seconds": 2.9299999999999997,
+      "cpu_seconds": 2.87,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-01.txt",
-      "maximum_rss_kib": 110228,
-      "wall_seconds": 2.5790920439999354
+      "maximum_rss_kib": 110204,
+      "wall_seconds": 2.524186130999965
     },
     {
       "command": [
         "python",
         "finite.py"
       ],
-      "cpu_seconds": 4.22,
+      "cpu_seconds": 4.18,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-02.txt",
-      "maximum_rss_kib": 96168,
-      "wall_seconds": 3.826142484000229
+      "maximum_rss_kib": 96288,
+      "wall_seconds": 3.827295450000065
     },
     {
       "command": [
@@ -42,11 +42,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 2.71,
+      "cpu_seconds": 2.61,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-03.txt",
-      "maximum_rss_kib": 119084,
-      "wall_seconds": 2.628092440000273
+      "maximum_rss_kib": 119040,
+      "wall_seconds": 2.6320279060000757
     },
     {
       "command": [
@@ -57,11 +57,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 2.8000000000000003,
+      "cpu_seconds": 2.38,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-04.txt",
-      "maximum_rss_kib": 119056,
-      "wall_seconds": 2.8288616489999185
+      "maximum_rss_kib": 119080,
+      "wall_seconds": 2.3780247490000193
     },
     {
       "command": [
@@ -71,72 +71,72 @@
         "fresh",
         "--seed",
         "3"
+      ],
+      "cpu_seconds": 2.52,
+      "exit_code": 0,
+      "log": "results/reproduction-logs/command-05.txt",
+      "maximum_rss_kib": 119060,
+      "wall_seconds": 2.5269474010000295
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "index-lag",
+        "--seed",
+        "1"
+      ],
+      "cpu_seconds": 2.83,
+      "exit_code": 0,
+      "log": "results/reproduction-logs/command-06.txt",
+      "maximum_rss_kib": 119392,
+      "wall_seconds": 2.637009383000077
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "index-lag",
+        "--seed",
+        "2"
+      ],
+      "cpu_seconds": 2.73,
+      "exit_code": 0,
+      "log": "results/reproduction-logs/command-07.txt",
+      "maximum_rss_kib": 119372,
+      "wall_seconds": 2.6360631670000885
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "index-lag",
+        "--seed",
+        "3"
+      ],
+      "cpu_seconds": 2.73,
+      "exit_code": 0,
+      "log": "results/reproduction-logs/command-08.txt",
+      "maximum_rss_kib": 119304,
+      "wall_seconds": 2.6452614220000896
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "log-gap",
+        "--seed",
+        "1"
       ],
       "cpu_seconds": 2.84,
       "exit_code": 0,
-      "log": "results/reproduction-logs/command-05.txt",
-      "maximum_rss_kib": 119012,
-      "wall_seconds": 2.827049710999745
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "index-lag",
-        "--seed",
-        "1"
-      ],
-      "cpu_seconds": 2.81,
-      "exit_code": 0,
-      "log": "results/reproduction-logs/command-06.txt",
-      "maximum_rss_kib": 119368,
-      "wall_seconds": 2.679407362999882
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "index-lag",
-        "--seed",
-        "2"
-      ],
-      "cpu_seconds": 2.71,
-      "exit_code": 0,
-      "log": "results/reproduction-logs/command-07.txt",
-      "maximum_rss_kib": 119300,
-      "wall_seconds": 2.6300771589999385
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "index-lag",
-        "--seed",
-        "3"
-      ],
-      "cpu_seconds": 2.51,
-      "exit_code": 0,
-      "log": "results/reproduction-logs/command-08.txt",
-      "maximum_rss_kib": 119344,
-      "wall_seconds": 2.482329669000137
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "log-gap",
-        "--seed",
-        "1"
-      ],
-      "cpu_seconds": 3.0300000000000002,
-      "exit_code": 0,
       "log": "results/reproduction-logs/command-09.txt",
-      "maximum_rss_kib": 119200,
-      "wall_seconds": 2.969227196000247
+      "maximum_rss_kib": 119136,
+      "wall_seconds": 2.700770390999992
     },
     {
       "command": [
@@ -146,27 +146,27 @@
         "log-gap",
         "--seed",
         "2"
-      ],
-      "cpu_seconds": 3.0900000000000003,
-      "exit_code": 0,
-      "log": "results/reproduction-logs/command-10.txt",
-      "maximum_rss_kib": 119184,
-      "wall_seconds": 3.0459221920000346
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "log-gap",
-        "--seed",
-        "3"
       ],
       "cpu_seconds": 2.72,
       "exit_code": 0,
+      "log": "results/reproduction-logs/command-10.txt",
+      "maximum_rss_kib": 119240,
+      "wall_seconds": 2.628542441000036
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "log-gap",
+        "--seed",
+        "3"
+      ],
+      "cpu_seconds": 2.85,
+      "exit_code": 0,
       "log": "results/reproduction-logs/command-11.txt",
-      "maximum_rss_kib": 119108,
-      "wall_seconds": 2.6448558509996474
+      "maximum_rss_kib": 119120,
+      "wall_seconds": 2.78841059399997
     },
     {
       "command": [
@@ -177,11 +177,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 2.86,
+      "cpu_seconds": 2.71,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-12.txt",
-      "maximum_rss_kib": 119308,
-      "wall_seconds": 2.7451373359999707
+      "maximum_rss_kib": 119344,
+      "wall_seconds": 2.6431364520000216
     },
     {
       "command": [
@@ -192,11 +192,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 2.9,
+      "cpu_seconds": 2.75,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-13.txt",
-      "maximum_rss_kib": 119336,
-      "wall_seconds": 2.8307217890001084
+      "maximum_rss_kib": 119352,
+      "wall_seconds": 2.6251486680000653
     },
     {
       "command": [
@@ -207,11 +207,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 2.89,
+      "cpu_seconds": 2.6399999999999997,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-14.txt",
-      "maximum_rss_kib": 119308,
-      "wall_seconds": 2.8412207389997093
+      "maximum_rss_kib": 119304,
+      "wall_seconds": 2.5476270220000288
     },
     {
       "command": [
@@ -222,11 +222,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 3.0,
+      "cpu_seconds": 2.56,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-15.txt",
-      "maximum_rss_kib": 119564,
-      "wall_seconds": 2.8245823939996626
+      "maximum_rss_kib": 119576,
+      "wall_seconds": 2.4261425760000748
     },
     {
       "command": [
@@ -237,11 +237,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 2.9,
+      "cpu_seconds": 2.5300000000000002,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-16.txt",
-      "maximum_rss_kib": 119372,
-      "wall_seconds": 2.843686403999982
+      "maximum_rss_kib": 119568,
+      "wall_seconds": 2.423674449000032
     },
     {
       "command": [
@@ -252,11 +252,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 2.99,
+      "cpu_seconds": 2.47,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-17.txt",
-      "maximum_rss_kib": 119544,
-      "wall_seconds": 2.8323796740000944
+      "maximum_rss_kib": 119548,
+      "wall_seconds": 2.331570184000043
     },
     {
       "command": [
@@ -267,11 +267,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 3.35,
+      "cpu_seconds": 2.38,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-18.txt",
-      "maximum_rss_kib": 120412,
-      "wall_seconds": 3.204332812999837
+      "maximum_rss_kib": 120396,
+      "wall_seconds": 2.3318772600000557
     },
     {
       "command": [
@@ -282,11 +282,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 2.77,
+      "cpu_seconds": 2.36,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-19.txt",
-      "maximum_rss_kib": 120380,
-      "wall_seconds": 2.7337324850000186
+      "maximum_rss_kib": 120472,
+      "wall_seconds": 2.2712494190000143
     },
     {
       "command": [
@@ -297,11 +297,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 3.24,
+      "cpu_seconds": 2.44,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-20.txt",
-      "maximum_rss_kib": 120260,
-      "wall_seconds": 3.2156274059998395
+      "maximum_rss_kib": 120364,
+      "wall_seconds": 2.3724617630000466
     },
     {
       "command": [
@@ -309,59 +309,59 @@
         "reproduce.py",
         "--case",
         "hot-shard",
+        "--seed",
+        "1"
+      ],
+      "cpu_seconds": 2.26,
+      "exit_code": 0,
+      "log": "results/reproduction-logs/command-21.txt",
+      "maximum_rss_kib": 118076,
+      "wall_seconds": 2.1468579869999758
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "hot-shard",
+        "--seed",
+        "2"
+      ],
+      "cpu_seconds": 2.23,
+      "exit_code": 0,
+      "log": "results/reproduction-logs/command-22.txt",
+      "maximum_rss_kib": 118224,
+      "wall_seconds": 2.1714407140000276
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "hot-shard",
+        "--seed",
+        "3"
+      ],
+      "cpu_seconds": 2.29,
+      "exit_code": 0,
+      "log": "results/reproduction-logs/command-23.txt",
+      "maximum_rss_kib": 118064,
+      "wall_seconds": 2.255246456000009
+    },
+    {
+      "command": [
+        "python",
+        "reproduce.py",
+        "--case",
+        "compaction",
         "--seed",
         "1"
       ],
       "cpu_seconds": 2.62,
       "exit_code": 0,
-      "log": "results/reproduction-logs/command-21.txt",
-      "maximum_rss_kib": 118084,
-      "wall_seconds": 2.526211885000066
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "hot-shard",
-        "--seed",
-        "2"
-      ],
-      "cpu_seconds": 2.63,
-      "exit_code": 0,
-      "log": "results/reproduction-logs/command-22.txt",
-      "maximum_rss_kib": 118184,
-      "wall_seconds": 2.534483625000121
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "hot-shard",
-        "--seed",
-        "3"
-      ],
-      "cpu_seconds": 2.6,
-      "exit_code": 0,
-      "log": "results/reproduction-logs/command-23.txt",
-      "maximum_rss_kib": 118132,
-      "wall_seconds": 2.449851184000181
-    },
-    {
-      "command": [
-        "python",
-        "reproduce.py",
-        "--case",
-        "compaction",
-        "--seed",
-        "1"
-      ],
-      "cpu_seconds": 3.04,
-      "exit_code": 0,
       "log": "results/reproduction-logs/command-24.txt",
-      "maximum_rss_kib": 118596,
-      "wall_seconds": 2.945142118000149
+      "maximum_rss_kib": 118688,
+      "wall_seconds": 2.5767541089999213
     },
     {
       "command": [
@@ -372,11 +372,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 2.94,
+      "cpu_seconds": 2.66,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-25.txt",
-      "maximum_rss_kib": 118692,
-      "wall_seconds": 2.798168737999731
+      "maximum_rss_kib": 118560,
+      "wall_seconds": 2.5450221470000542
     },
     {
       "command": [
@@ -387,11 +387,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 2.81,
+      "cpu_seconds": 2.5700000000000003,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-26.txt",
-      "maximum_rss_kib": 118696,
-      "wall_seconds": 2.729123410000284
+      "maximum_rss_kib": 118592,
+      "wall_seconds": 2.4480954900000143
     },
     {
       "command": [
@@ -404,11 +404,11 @@
         "--length",
         "1"
       ],
-      "cpu_seconds": 3.42,
+      "cpu_seconds": 2.59,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-27.txt",
-      "maximum_rss_kib": 119000,
-      "wall_seconds": 3.3743910600001072
+      "maximum_rss_kib": 118928,
+      "wall_seconds": 2.5266681800000015
     },
     {
       "command": [
@@ -421,11 +421,11 @@
         "--length",
         "5"
       ],
-      "cpu_seconds": 3.54,
+      "cpu_seconds": 2.6199999999999997,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-28.txt",
-      "maximum_rss_kib": 119088,
-      "wall_seconds": 3.4711215190000075
+      "maximum_rss_kib": 119224,
+      "wall_seconds": 2.477461574999893
     },
     {
       "command": [
@@ -438,11 +438,11 @@
         "--length",
         "16"
       ],
-      "cpu_seconds": 3.22,
+      "cpu_seconds": 2.46,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-29.txt",
-      "maximum_rss_kib": 119468,
-      "wall_seconds": 3.103029480999794
+      "maximum_rss_kib": 119700,
+      "wall_seconds": 2.390492203000008
     },
     {
       "command": [
@@ -455,11 +455,11 @@
         "--length",
         "32"
       ],
-      "cpu_seconds": 2.84,
+      "cpu_seconds": 2.6199999999999997,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-30.txt",
-      "maximum_rss_kib": 120196,
-      "wall_seconds": 2.830617451999842
+      "maximum_rss_kib": 120200,
+      "wall_seconds": 2.5431296609999663
     },
     {
       "command": [
@@ -472,11 +472,11 @@
         "--length",
         "64"
       ],
-      "cpu_seconds": 2.83,
+      "cpu_seconds": 2.55,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-31.txt",
-      "maximum_rss_kib": 120876,
-      "wall_seconds": 2.779160551000132
+      "maximum_rss_kib": 120796,
+      "wall_seconds": 2.5249335099999826
     },
     {
       "command": [
@@ -489,11 +489,11 @@
         "--length",
         "1"
       ],
-      "cpu_seconds": 2.52,
+      "cpu_seconds": 2.46,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-32.txt",
-      "maximum_rss_kib": 117732,
-      "wall_seconds": 2.429029071000059
+      "maximum_rss_kib": 117824,
+      "wall_seconds": 2.375576125000066
     },
     {
       "command": [
@@ -506,11 +506,11 @@
         "--length",
         "5"
       ],
-      "cpu_seconds": 2.78,
+      "cpu_seconds": 2.3,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-33.txt",
-      "maximum_rss_kib": 117988,
-      "wall_seconds": 2.684970259000238
+      "maximum_rss_kib": 118056,
+      "wall_seconds": 2.275304100000085
     },
     {
       "command": [
@@ -523,11 +523,11 @@
         "--length",
         "16"
       ],
-      "cpu_seconds": 2.75,
+      "cpu_seconds": 2.25,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-34.txt",
-      "maximum_rss_kib": 118384,
-      "wall_seconds": 2.695923369999946
+      "maximum_rss_kib": 118432,
+      "wall_seconds": 2.2224704129999964
     },
     {
       "command": [
@@ -539,30 +539,30 @@
         "1",
         "--no-alternates"
       ],
-      "cpu_seconds": 2.89,
+      "cpu_seconds": 2.54,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-35.txt",
-      "maximum_rss_kib": 119332,
-      "wall_seconds": 2.8439432840000336
+      "maximum_rss_kib": 119288,
+      "wall_seconds": 2.4830919119999635
     },
     {
       "command": [
         "python",
         "analyze.py"
       ],
-      "cpu_seconds": 12.74,
+      "cpu_seconds": 11.81,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-36.txt",
-      "maximum_rss_kib": 137844,
-      "wall_seconds": 12.37150283100027
+      "maximum_rss_kib": 137772,
+      "wall_seconds": 11.447970317999989
     }
   ],
-  "driver_rss_kib": 93224,
+  "driver_rss_kib": 93340,
   "error": null,
-  "maximum_child_rss_kib": 137844,
+  "maximum_child_rss_kib": 137772,
   "meaning": "command success and frozen finite outcomes, not scientific novelty or deployment correctness",
-  "parent_cpu_seconds": 0.182917365,
+  "parent_cpu_seconds": 0.11814772600000001,
   "scope": "unit tests, finite receipt/schedule checks, retained TCP campaign and final replay; independent trace jobs use no more than three workers; the pre-lock pilot is a separate focused command; source inputs are not executed",
   "status": "PASS",
-  "wall_seconds": 49.9879501559999
+  "wall_seconds": 45.174020583000015
 }

@@ -53,13 +53,13 @@ At target vector `T`, merge the candidate buffers of all covered shards and take
 
 Every row in `R` is sound by Lemma 1. Any target-live positive row omitted from the union belongs to some shard and has key at least that shard’s tail by Lemma 2. With `k` returned rows and the kth key strictly better than every nonempty tail, no omitted row can enter the result. When fewer than `k` rows exist, exactness requires every tail to be exhausted. Deterministic identifier tie-breaking makes the strict comparison sufficient at equal scores.
 
-If a shard is missing, rows from covered shards remain sound but completeness is not asserted. If a tail blocks, the returned rows may already equal the oracle; the online evidence simply does not justify that equality. The status therefore distinguishes `partial`, `rank-underdetermined`, and `complete`.
+If a shard is missing, rows from covered shards remain sound but completeness is not asserted. If a tail blocks, the returned rows may already equal the oracle; the conservative online test does not establish that equality. The status therefore distinguishes `partial`, `rank-underdetermined`, and `complete`.
 
-## 6. Why a reported blocker is an information boundary
+## 6. Conservative blockers and compatible witnesses
 
-Fix a transcript containing all candidate rows, tails, cuts, and events. Suppose shard `s` has tail `b_s` that is no worse than the current kth key. Two states can be consistent with the transcript: one has no additional row before the kth result; another has an omitted row at `b_s` (or earlier within the allowed bound) that changes the global top-k. A verifier using only the transcript sees identical information but the correct answers differ. It cannot justify completeness for both. Additional evidence from that shard—or a stronger previously validated bound—is necessary.
+A blocking boundary is a sufficient reason for this conservative checker to withhold a complete status, not a necessary characterization of incomplete information. Fix the entire query, plan, k, epoch, catalog, receipts, and events. Only when two states satisfy all of that evidence and have different exact top-k answers does indistinguishability require distinguishing evidence or a non-complete status. An omitted row strictly better than the kth key must be constructible without contradicting any of the fixed evidence. A free choice of a tail value is not enough.
 
-This is an indistinguishability witness for the token information model. It does not prove that the implementation’s chosen refill is byte-optimal among all indexes, sketches, or authenticated data structures.
+For k=L=1, take unique IDs a<b with tied score one, prefix a and tail (-1,b). The complete suffix deletes a and assigns a score-one body to b. All other shards are empty. The advanced token returns b and still has tail (-1,b), so the strict blocker test fires. But the ID b is already represented; every other compatible omitted row is strictly worse. The answer is exact although this conservative rule does not certify it. The regression test test_tail_identity_is_conservative_not_necessary retains this counterexample.
 
 ## 7. Bounded repair
 
@@ -70,6 +70,8 @@ Let `d` be the number of distinct identifiers written in the complete suffix aft
 The implementation fails closed when `k+d` exceeds `MAX_PREFIX=64`; it does not truncate the claimed sufficient length. A reserve can be requested for future reuse, but the primary campaign uses capacity `k=5` and repairs only an actual blocker.
 
 ## 8. Stateful checker and event-feed boundary
+
+Token reuse is bound to the entire query object, including its plan and k, and its ownership epoch. Checking a whole result stages token changes and commits them only after every response field passes. Event receipts validate every batch entry before feed progress changes. Directed rejected-repair, rejected-advance, and rejected-batch tests verify unchanged state and successful legal retries. These are static-boundary regressions, not field-failure observations.
 
 Events are fetched once into a coordinator-held, query-independent feed. Each source receipt is bound to shard, epoch, lower and upper sequence numbers and must contain exactly the contiguous sequence. The independent checker stores the same feed, recomputes token transitions without importing coordinator or producer code, installs only bound repair prefixes, and recomputes rows, blockers, and status. Events are compacted only after every live token has consumed them, while retaining one admitted journal window for a lagging repair prefix.
 
@@ -97,4 +99,4 @@ Supporting such a ranker requires binding a score/statistics epoch, freezing old
 
 `finite_continuation.py` checks 131,072 local token transitions, 65,536 `k+d` repairs, and 24,389 global merges (220,997 total), including 8,484 blocked and 15,905 complete global cases, with zero detected failures. These are finite instances, not model checking of arbitrary Python/TCP executions.
 
-The independent analyzer reconstructs source snapshots and update intervals for all 18 primary traces, verifies 30,312 source receipts, and replays all 4,536 checker transitions. Thirty-one directed unit tests cover binding, gaps, malformed updates, foreign epochs, compaction, persistence, blocker repair, and unsafe controls. The clean four-stage reproduction passed. This evidence supports the stated bounded implementation and theorems; it is not a proof of production reliability or a substitute for independent review.
+The independent analyzer reconstructs source snapshots and update intervals for all 18 primary traces, verifies 30,312 source receipts, and replays all 4,536 checker transitions. The directed unit tests cover binding, gaps, malformed updates, foreign epochs, compaction, persistence, blocker repair, and unsafe controls. The clean four-stage reproduction passed. This evidence supports the stated bounded implementation and theorems; it is not a proof of production reliability or a substitute for independent review.

@@ -22,6 +22,11 @@
     },
     "hygiene": {
       "forbidden_files": 0,
+      "project_root_entries": [
+        "README.md",
+        "artifact",
+        "paper"
+      ],
       "symlinks": 0
     },
     "inputs": {
@@ -29,12 +34,19 @@
       "retained_python_files": 107,
       "source_distributions": 8
     },
+    "paper_results": {
+      "continuation_macros": 31,
+      "generated_result_files": 6,
+      "real_history_macros": 16,
+      "reproduction_macros": 12
+    },
     "real_history": {
       "base_file_verified": true,
       "function_assignments": 7,
       "selected_commits": 6
     },
     "references": {
+      "bibtex_records": 67,
       "category_counts": {
         "authenticated and verifiable queries": 7,
         "federated retrieval and code search": 12,
@@ -42,10 +54,13 @@
         "replication, consistency, and logs": 24,
         "top-k and continuous queries": 10
       },
+      "citation_key_occurrences": 72,
       "complete_main_text_records": 21,
-      "minimum_required": 55,
+      "minimum_required": 60,
       "record_or_selected_passage_checks": 46,
       "references": 67,
+      "rendered_bibitems": 67,
+      "unique_cited_keys": 67,
       "verification_basis_counts": {
         "official CIDR proceedings PDF": 1,
         "official NetDB event program": 1,
@@ -57,7 +72,7 @@
       }
     },
     "resource_ledger": {
-      "directed_unit_tests": 43,
+      "directed_unit_tests": 50,
       "three_clean_records_match": true
     },
     "results": {

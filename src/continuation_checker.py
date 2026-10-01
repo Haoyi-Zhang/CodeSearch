@@ -42,13 +42,16 @@ class ContinuationChecker:
     def compact_events(self, floors: list[int]) -> None:
         """Bound state after every installed token has consumed a prefix."""
         need(len(floors) == 3, 'checker compaction vector')
+        staged = [dict(shard_events) for shard_events in self.events]
         for shard, floor in enumerate(floors):
             need(type(floor) is int and 0 <= floor <= self.frontiers[shard],
                  'checker compaction floor')
-            for seq in [seq for seq in self.events[shard] if seq <= floor]:
-                del self.events[shard][seq]
+            for seq in [seq for seq in staged[shard] if seq <= floor]:
+                del staged[shard][seq]
+        self.events = staged
 
     def accept_events(self, entry: dict, owners: list[list[int]], expected_epoch: int) -> int:
+        need(expected_epoch == self.epoch, 'event current epoch')
         req, rep = entry['request'], entry['reply']
         need(req.get('op') == 'events' and rep.get('kind') == 'events', 'event receipt kind')
         shard = rep['shard']
@@ -56,10 +59,13 @@ class ContinuationChecker:
         need(req.get('shard') == shard and req.get('epoch') == expected_epoch, 'event request binding')
         need(rep['epoch'] == expected_epoch and rep['lo'] == req.get('lo')
              and rep['hi'] == req.get('hi'), 'event reply binding')
+        need(type(rep['lo']) is int and type(rep['hi']) is int
+             and 0 <= rep['lo'] <= rep['hi'], 'event progress')
         need(rep['lo'] == self.frontiers[shard], 'event feed gap')
         events = rep['events']
         need([e.get('seq') for e in events] == list(range(rep['lo'] + 1, rep['hi'] + 1)),
              'event sequence')
+        staged = dict(self.events[shard])
         for event in events:
             need(event.get('shard') == shard, 'event shard')
             changes = event.get('changes')
@@ -69,12 +75,16 @@ class ContinuationChecker:
             ids = [pair[0] for pair in changes]
             need(len(ids) == len(set(ids)), 'duplicate changed identifier')
             need(all(body is None or body in self.known_bodies for _, body in changes), 'event body')
-            self.events[shard][event['seq']] = deepcopy(event)
+            staged[event['seq']] = deepcopy(event)
+        # Commit only after all events in the receipt have passed validation.
+        self.events[shard] = staged
         self.frontiers[shard] = rep['hi']
         return len(events)
 
     def _check_prefix(self, entry: dict, query: dict, owners: list[list[int]],
                       epoch: int, capacity: int) -> dict:
+        need(epoch == self.epoch, 'prefix current epoch')
+        need(type(capacity) is int and query['k'] <= capacity <= 64, 'prefix capacity')
         req, rep = entry['request'], entry['reply']
         shard = rep.get('shard')
         need(req.get('op') == 'prefix' and rep.get('kind') == 'prefix', 'prefix receipt kind')
@@ -105,8 +115,22 @@ class ContinuationChecker:
 
     def install_prefix(self, query: dict, entry: dict, owners: list[list[int]],
                        epoch: int, capacity: int) -> None:
+        self._check_query(query)
+        for old in self.tokens.get(query['id'], {}).values():
+            need(old['query'] == query and old['epoch'] == epoch, 'token query/plan/k/epoch binding')
         token = self._check_prefix(entry, query, owners, epoch, capacity)
         self.tokens.setdefault(query['id'], {})[token['shard']] = token
+
+    @staticmethod
+    def _check_query(query: dict) -> None:
+        need(isinstance(query, dict) and isinstance(query.get('id'), str), 'query id')
+        need(type(query.get('k')) is int and 1 <= query['k'] <= 20, 'query k')
+        plan = query.get('plan')
+        need(isinstance(plan, list) and 1 <= len(plan) <= 2, 'query plan')
+        for alternate in plan:
+            need(isinstance(alternate, list) and 1 <= len(alternate) <= 4
+                 and all(isinstance(label, str) for label in alternate)
+                 and len(set(alternate)) == len(alternate), 'query alternate')
 
     def _events_between(self, shard: int, lo: int, hi: int) -> list[dict]:
         need(0 <= lo <= hi <= self.frontiers[shard], 'checker feed coverage')
@@ -146,7 +170,13 @@ class ContinuationChecker:
         need(epoch == self.epoch and result.get('kind') == 'continuation-result', 'result epoch/kind')
         need(result.get('query') == query and result.get('cut') == cut
              and result.get('epoch') == epoch, 'result binding')
-        current = self.tokens.setdefault(query['id'], {})
+        self._check_query(query)
+        need(len(cut) == 3 and all(type(x) is int and x >= 0 for x in cut), 'result cut')
+        need(set(repairs).issubset({'0','1','2'}), 'repair labels')
+        existing = self.tokens.get(query['id'], {})
+        for token in existing.values():
+            need(token['query'] == query and token['epoch'] == epoch, 'token query/plan/k/epoch binding')
+        current = deepcopy(existing)
         missing = set()
         for shard in range(3):
             label = str(shard)
@@ -193,4 +223,6 @@ class ContinuationChecker:
         need(result.get('rank_blockers') == blockers, 'continuation blockers')
         need(result.get('status') == status, 'continuation status')
         need(result.get('token_summary') == expected_summary, 'continuation token summary')
+        # Publish the whole query transition only after the response is verified.
+        self.tokens[query['id']] = current
         return True
