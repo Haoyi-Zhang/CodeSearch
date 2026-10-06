@@ -302,8 +302,8 @@
   "false_complete": 0,
   "unsound_rows": 0,
   "resources": {
-    "cpu_seconds": 6.293293088,
-    "wall_seconds": 6.293676154999986,
-    "peak_rss_kib": 25632
+    "cpu_seconds": 5.13099027,
+    "wall_seconds": 5.13252213200002,
+    "peak_rss_kib": 25452
   }
 }

@@ -17,7 +17,7 @@
   },
   "communication_reduction_vs_cut_cache_percent": 60.56666038547207,
   "communication_reduction_vs_overlay_percent": 81.76211237170305,
-  "coordinator_peak_rss_kib": 61380,
+  "coordinator_peak_rss_kib": 61444,
   "cost_scope": "source RPC bytes; continuation includes cold token acquisition and one shared event feed; dissemination control, result delivery, and source-body transport excluded",
   "fault_probe": {
     "healed_exact": true,
@@ -29,7 +29,7 @@
     "partial_status": "partial"
   },
   "function_assignments": 7,
-  "maximum_source_process_rss_kib": 57656,
+  "maximum_source_process_rss_kib": 57844,
   "observed_head_commit": "4500e3d04288738d25acbb4973eb3c3e1bf41db9",
   "oracle_change_observations": 10,
   "policies": {
@@ -121,5 +121,5 @@
     "snapshot": 6
   },
   "targeted_queries": 4,
-  "wall_seconds": 6.56960306000002
+  "wall_seconds": 6.306811919000012
 }

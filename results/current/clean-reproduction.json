@@ -4,7 +4,7 @@
     "overall_deadline_seconds": 180,
     "workers": 3
   },
-  "child_cpu_seconds": 216.63,
+  "child_cpu_seconds": 200.94,
   "commands": [
     {
       "command": [
@@ -16,22 +16,22 @@
         "tests",
         "-v"
       ],
-      "cpu_seconds": 3.56,
+      "cpu_seconds": 3.42,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-01.txt",
-      "maximum_rss_kib": 39880,
-      "wall_seconds": 3.622068810000002
+      "maximum_rss_kib": 39892,
+      "wall_seconds": 3.472098475999985
     },
     {
       "command": [
         "python",
         "finite.py"
       ],
-      "cpu_seconds": 6.8999999999999995,
+      "cpu_seconds": 5.64,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-02.txt",
-      "maximum_rss_kib": 25632,
-      "wall_seconds": 6.9284308339999825
+      "maximum_rss_kib": 25452,
+      "wall_seconds": 5.675917163000008
     },
     {
       "command": [
@@ -42,11 +42,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.8,
+      "cpu_seconds": 5.36,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-03.txt",
-      "maximum_rss_kib": 47972,
-      "wall_seconds": 7.69256270599999
+      "maximum_rss_kib": 48000,
+      "wall_seconds": 8.442626634999982
     },
     {
       "command": [
@@ -57,11 +57,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.83,
+      "cpu_seconds": 5.39,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-04.txt",
-      "maximum_rss_kib": 47888,
-      "wall_seconds": 8.898552094000024
+      "maximum_rss_kib": 48004,
+      "wall_seconds": 8.647924455000009
     },
     {
       "command": [
@@ -72,11 +72,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.88,
+      "cpu_seconds": 5.319999999999999,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-05.txt",
-      "maximum_rss_kib": 47900,
-      "wall_seconds": 10.106130819000015
+      "maximum_rss_kib": 47756,
+      "wall_seconds": 7.490425621999975
     },
     {
       "command": [
@@ -87,11 +87,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.87,
+      "cpu_seconds": 5.33,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-06.txt",
-      "maximum_rss_kib": 48132,
-      "wall_seconds": 9.150850001000038
+      "maximum_rss_kib": 48160,
+      "wall_seconds": 7.1894873829999995
     },
     {
       "command": [
@@ -102,11 +102,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.84,
+      "cpu_seconds": 5.3999999999999995,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-07.txt",
-      "maximum_rss_kib": 48228,
-      "wall_seconds": 8.297492650000038
+      "maximum_rss_kib": 48152,
+      "wall_seconds": 8.194730979000013
     },
     {
       "command": [
@@ -117,11 +117,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.83,
+      "cpu_seconds": 5.38,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-08.txt",
-      "maximum_rss_kib": 48044,
-      "wall_seconds": 8.444526897999992
+      "maximum_rss_kib": 48004,
+      "wall_seconds": 8.745224587999985
     },
     {
       "command": [
@@ -132,11 +132,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.7700000000000005,
+      "cpu_seconds": 5.38,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-09.txt",
-      "maximum_rss_kib": 48116,
-      "wall_seconds": 9.350014682999984
+      "maximum_rss_kib": 48032,
+      "wall_seconds": 8.448975069
     },
     {
       "command": [
@@ -147,11 +147,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.77,
+      "cpu_seconds": 5.35,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-10.txt",
-      "maximum_rss_kib": 47780,
-      "wall_seconds": 8.796879936999972
+      "maximum_rss_kib": 47876,
+      "wall_seconds": 8.249254537000013
     },
     {
       "command": [
@@ -162,11 +162,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.81,
+      "cpu_seconds": 5.37,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-11.txt",
-      "maximum_rss_kib": 48044,
-      "wall_seconds": 9.047773053000014
+      "maximum_rss_kib": 47836,
+      "wall_seconds": 8.144138674000033
     },
     {
       "command": [
@@ -177,11 +177,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.68,
+      "cpu_seconds": 5.33,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-12.txt",
-      "maximum_rss_kib": 48072,
-      "wall_seconds": 8.79729749400002
+      "maximum_rss_kib": 48124,
+      "wall_seconds": 7.994220684000027
     },
     {
       "command": [
@@ -192,11 +192,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.7,
+      "cpu_seconds": 5.27,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-13.txt",
-      "maximum_rss_kib": 48188,
-      "wall_seconds": 8.693732539999985
+      "maximum_rss_kib": 48272,
+      "wall_seconds": 7.04149439400004
     },
     {
       "command": [
@@ -207,11 +207,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.74,
+      "cpu_seconds": 5.409999999999999,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-14.txt",
-      "maximum_rss_kib": 47936,
-      "wall_seconds": 8.444132893000017
+      "maximum_rss_kib": 48084,
+      "wall_seconds": 8.994613332000029
     },
     {
       "command": [
@@ -222,11 +222,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.83,
+      "cpu_seconds": 5.47,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-15.txt",
-      "maximum_rss_kib": 48304,
-      "wall_seconds": 8.540391805000013
+      "maximum_rss_kib": 48364,
+      "wall_seconds": 8.541641099000003
     },
     {
       "command": [
@@ -237,11 +237,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.87,
+      "cpu_seconds": 5.59,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-16.txt",
       "maximum_rss_kib": 48488,
-      "wall_seconds": 9.149788221999984
+      "wall_seconds": 8.392352446000018
     },
     {
       "command": [
@@ -252,11 +252,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.83,
+      "cpu_seconds": 5.52,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-17.txt",
-      "maximum_rss_kib": 48320,
-      "wall_seconds": 8.539503179999997
+      "maximum_rss_kib": 48352,
+      "wall_seconds": 8.594539016999988
     },
     {
       "command": [
@@ -267,11 +267,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.75,
+      "cpu_seconds": 5.39,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-18.txt",
-      "maximum_rss_kib": 49148,
-      "wall_seconds": 9.097773964999988
+      "maximum_rss_kib": 49248,
+      "wall_seconds": 8.142065813000045
     },
     {
       "command": [
@@ -282,11 +282,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.73,
+      "cpu_seconds": 5.38,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-19.txt",
-      "maximum_rss_kib": 49128,
-      "wall_seconds": 9.418133379999972
+      "maximum_rss_kib": 49236,
+      "wall_seconds": 7.841088302000003
     },
     {
       "command": [
@@ -297,11 +297,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.75,
+      "cpu_seconds": 5.43,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-20.txt",
-      "maximum_rss_kib": 49220,
-      "wall_seconds": 8.199268559000018
+      "maximum_rss_kib": 49144,
+      "wall_seconds": 8.09286014899999
     },
     {
       "command": [
@@ -312,11 +312,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.07,
+      "cpu_seconds": 4.77,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-21.txt",
-      "maximum_rss_kib": 47052,
-      "wall_seconds": 7.7917879459999995
+      "maximum_rss_kib": 46964,
+      "wall_seconds": 7.0432916139999975
     },
     {
       "command": [
@@ -327,11 +327,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.08,
+      "cpu_seconds": 4.760000000000001,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-22.txt",
-      "maximum_rss_kib": 46900,
-      "wall_seconds": 7.396584472000029
+      "maximum_rss_kib": 46944,
+      "wall_seconds": 7.237653683999952
     },
     {
       "command": [
@@ -342,11 +342,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.0600000000000005,
+      "cpu_seconds": 4.83,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-23.txt",
-      "maximum_rss_kib": 46968,
-      "wall_seconds": 7.640991479999968
+      "maximum_rss_kib": 46832,
+      "wall_seconds": 7.844382848999999
     },
     {
       "command": [
@@ -357,11 +357,11 @@
         "--seed",
         "1"
       ],
-      "cpu_seconds": 5.609999999999999,
+      "cpu_seconds": 5.27,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-24.txt",
-      "maximum_rss_kib": 47524,
-      "wall_seconds": 8.699169804999997
+      "maximum_rss_kib": 47448,
+      "wall_seconds": 7.742781814000011
     },
     {
       "command": [
@@ -372,11 +372,11 @@
         "--seed",
         "2"
       ],
-      "cpu_seconds": 5.65,
+      "cpu_seconds": 5.2700000000000005,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-25.txt",
-      "maximum_rss_kib": 47492,
-      "wall_seconds": 8.591933074999986
+      "maximum_rss_kib": 47412,
+      "wall_seconds": 8.344692358999964
     },
     {
       "command": [
@@ -387,11 +387,11 @@
         "--seed",
         "3"
       ],
-      "cpu_seconds": 5.640000000000001,
+      "cpu_seconds": 5.32,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-26.txt",
-      "maximum_rss_kib": 47488,
-      "wall_seconds": 8.79682576700003
+      "maximum_rss_kib": 47468,
+      "wall_seconds": 8.042905079000036
     },
     {
       "command": [
@@ -404,11 +404,11 @@
         "--length",
         "1"
       ],
-      "cpu_seconds": 5.75,
+      "cpu_seconds": 5.36,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-27.txt",
-      "maximum_rss_kib": 47572,
-      "wall_seconds": 6.9962365009999985
+      "maximum_rss_kib": 47836,
+      "wall_seconds": 7.987627838000037
     },
     {
       "command": [
@@ -421,11 +421,11 @@
         "--length",
         "5"
       ],
-      "cpu_seconds": 5.88,
+      "cpu_seconds": 5.41,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-28.txt",
-      "maximum_rss_kib": 47884,
-      "wall_seconds": 10.413126170999988
+      "maximum_rss_kib": 48000,
+      "wall_seconds": 8.39667461900001
     },
     {
       "command": [
@@ -438,11 +438,11 @@
         "--length",
         "16"
       ],
-      "cpu_seconds": 5.930000000000001,
+      "cpu_seconds": 5.45,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-29.txt",
-      "maximum_rss_kib": 48460,
-      "wall_seconds": 10.46478623300004
+      "maximum_rss_kib": 48468,
+      "wall_seconds": 8.50227393299997
     },
     {
       "command": [
@@ -455,11 +455,11 @@
         "--length",
         "32"
       ],
-      "cpu_seconds": 6.04,
+      "cpu_seconds": 5.43,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-30.txt",
-      "maximum_rss_kib": 48904,
-      "wall_seconds": 8.801464249999981
+      "maximum_rss_kib": 48996,
+      "wall_seconds": 7.995558727000002
     },
     {
       "command": [
@@ -472,11 +472,11 @@
         "--length",
         "64"
       ],
-      "cpu_seconds": 6.0600000000000005,
+      "cpu_seconds": 5.5200000000000005,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-31.txt",
-      "maximum_rss_kib": 49472,
-      "wall_seconds": 9.799615404000008
+      "maximum_rss_kib": 49496,
+      "wall_seconds": 8.447482756999989
     },
     {
       "command": [
@@ -489,11 +489,11 @@
         "--length",
         "1"
       ],
-      "cpu_seconds": 5.1899999999999995,
+      "cpu_seconds": 4.76,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-32.txt",
-      "maximum_rss_kib": 46492,
-      "wall_seconds": 7.39217561199996
+      "maximum_rss_kib": 46564,
+      "wall_seconds": 6.9406881329999806
     },
     {
       "command": [
@@ -506,11 +506,11 @@
         "--length",
         "5"
       ],
-      "cpu_seconds": 5.21,
+      "cpu_seconds": 4.79,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-33.txt",
-      "maximum_rss_kib": 46640,
-      "wall_seconds": 8.043882257000007
+      "maximum_rss_kib": 46840,
+      "wall_seconds": 7.445062628999949
     },
     {
       "command": [
@@ -523,11 +523,11 @@
         "--length",
         "16"
       ],
-      "cpu_seconds": 5.210000000000001,
+      "cpu_seconds": 4.8,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-34.txt",
-      "maximum_rss_kib": 47296,
-      "wall_seconds": 7.037943675000008
+      "maximum_rss_kib": 47236,
+      "wall_seconds": 6.992065486999991
     },
     {
       "command": [
@@ -539,30 +539,30 @@
         "1",
         "--no-alternates"
       ],
-      "cpu_seconds": 5.380000000000001,
+      "cpu_seconds": 4.75,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-35.txt",
-      "maximum_rss_kib": 47972,
-      "wall_seconds": 6.290814921999981
+      "maximum_rss_kib": 48028,
+      "wall_seconds": 5.982798935000005
     },
     {
       "command": [
         "python",
         "analyze.py"
       ],
-      "cpu_seconds": 19.13,
+      "cpu_seconds": 18.32,
       "exit_code": 0,
       "log": "results/reproduction-logs/command-36.txt",
-      "maximum_rss_kib": 60372,
-      "wall_seconds": 19.156189031999986
+      "maximum_rss_kib": 60264,
+      "wall_seconds": 18.355234886000005
     }
   ],
-  "driver_rss_kib": 15424,
+  "driver_rss_kib": 15388,
   "error": null,
-  "maximum_child_rss_kib": 60372,
+  "maximum_child_rss_kib": 60264,
   "meaning": "command success and frozen finite outcomes, not scientific novelty or deployment correctness",
-  "parent_cpu_seconds": 0.248030354,
+  "parent_cpu_seconds": 0.23670440099999998,
   "scope": "unit tests, finite receipt/schedule checks, retained TCP campaign and final replay; independent trace jobs use no more than three workers; the pre-lock pilot is a separate focused command; source inputs are not executed",
   "status": "PASS",
-  "wall_seconds": 125.09977971400002
+  "wall_seconds": 116.04588453099998
 }

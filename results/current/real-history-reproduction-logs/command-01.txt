@@ -6,6 +6,6 @@ test_query_strata_and_targeted_plans (tests.test_real_history.RealHistoryTest.te
 test_replacements_use_the_retained_identifier_namespace (tests.test_real_history.RealHistoryTest.test_replacements_use_the_retained_identifier_namespace) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 2.925s
+Ran 5 tests in 2.701s
 
 OK
