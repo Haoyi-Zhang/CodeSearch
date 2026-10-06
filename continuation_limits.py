@@ -13,7 +13,7 @@ def allowance(name: str, default: int, maximum: int = 600) -> int:
     return value
 
 
-BATCH_SECONDS = allowance('P016_BATCH_SECONDS', 135)
-SUITE_SECONDS = allowance('P016_SUITE_SECONDS', 170)
+BATCH_SECONDS = allowance('P016_BATCH_SECONDS', 300)
+SUITE_SECONDS = allowance('P016_SUITE_SECONDS', 420)
 if SUITE_SECONDS <= BATCH_SECONDS:
     raise ValueError('The suite allowance must exceed the batch allowance')

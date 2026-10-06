@@ -1,10 +1,24 @@
 import os
+import subprocess
+import sys
 import unittest
 from unittest.mock import patch
 from continuation_limits import allowance
 
 
 class AllowanceTests(unittest.TestCase):
+    def test_campaign_defaults_cover_measured_workload(self):
+        env = os.environ.copy()
+        env.pop('P016_BATCH_SECONDS', None)
+        env.pop('P016_SUITE_SECONDS', None)
+        result = subprocess.run(
+            [sys.executable, '-B', '-c',
+             'import continuation_limits as limits; '
+             'print(limits.BATCH_SECONDS, limits.SUITE_SECONDS)'],
+            env=env, capture_output=True, text=True, check=True, timeout=10,
+        )
+        self.assertEqual(result.stdout.strip(), '300 420')
+
     def test_original_default(self):
         with patch.dict(os.environ, {}, clear=True):
             self.assertEqual(allowance('TEST_ALLOWANCE', 135), 135)

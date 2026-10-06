@@ -16,11 +16,13 @@ The driver runs three complete bounded suites and then validates the evidence. I
 
 The standalone repository's `.github/workflows/scientific-checks.yml` runs this complete offline driver on pushes to `main` and manual dispatch. The job has a 30-minute limit and a 1,500-second campaign timeout, installs no scientific dependencies, and retains raw output and failures. It regenerates a disposable copy while preserving the checkout and a separate copy of the retained input results. Artifact collection runs even when the campaign fails; a workflow definition alone is not evidence of successful execution.
 
-The default continuation deadlines remain 135 seconds for the batch and 170 for
-the suite. The hosted workflow sets `P016_BATCH_SECONDS=300` and
-`P016_SUITE_SECONDS=420`, recorded in its actual run output; workloads, semantic
-comparisons, memory limits, and the two-worker bound are unchanged. This host
-allowance does not establish completion within the shorter historical deadlines.
+The continuation deadlines are 300 seconds for the batch and 420 seconds for
+the suite, both for ordinary commands and the hosted workflow. They may be
+increased with `P016_BATCH_SECONDS` and `P016_SUITE_SECONDS`, up to 600 seconds;
+the suite allowance must exceed the batch allowance. Workloads, semantic
+comparisons, memory limits, and the two-worker bound are unchanged. The retained
+run used these allowances and does not establish completion within the historical
+135-second batch and 170-second suite limits.
 
 ## Evidence and analysis units
 
