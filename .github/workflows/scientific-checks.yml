@@ -16,6 +16,10 @@ jobs:
       PYTHONUTF8: '1'
       PYTHONDONTWRITEBYTECODE: '1'
       PYTHONHASHSEED: '0'
+      # Keep every case and both workers; hosted runners receive a separately
+      # recorded wall allowance, not a relaxed semantic comparison.
+      P016_BATCH_SECONDS: '300'
+      P016_SUITE_SECONDS: '420'
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:

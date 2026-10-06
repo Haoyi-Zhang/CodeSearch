@@ -16,6 +16,12 @@ The driver runs three complete bounded suites and then validates the evidence. I
 
 The standalone repository's `.github/workflows/scientific-checks.yml` runs this complete offline driver on pushes to `main` and manual dispatch. The job has a 30-minute limit and a 1,500-second campaign timeout, installs no scientific dependencies, and retains raw output and failures. It regenerates a disposable copy while preserving the checkout and a separate copy of the retained input results. Artifact collection runs even when the campaign fails; a workflow definition alone is not evidence of successful execution.
 
+The default continuation deadlines remain 135 seconds for the batch and 170 for
+the suite. The hosted workflow sets `P016_BATCH_SECONDS=300` and
+`P016_SUITE_SECONDS=420`, recorded in its actual run output; workloads, semantic
+comparisons, memory limits, and the two-worker bound are unchanged. This host
+allowance does not establish completion within the shorter historical deadlines.
+
 ## Evidence and analysis units
 
 There are 18 primary case/seed traces and eight development traces, with real batch logs and the independent replay stage. Each primary policy has 4,536 calls. The public-history projection has 408 calls per policy and six independent source processes on one host. The cold-query suite preserves the unfavorable prefix-repair comparison. Unit and regression tests cover query/plan/k/epoch binding and failure-atomic state transitions; finite enumerations cover 220,997 explicitly bounded cases.
