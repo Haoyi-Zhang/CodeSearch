@@ -120,3 +120,13 @@ information-equivalent outcome remains equality for the global comparator.
 The ranker is fixed body-local AST-label overlap with deterministic unique-ID tie breaking. A missing-tail blocker is conservative, not an unconditional necessity theorem. Necessary new evidence is asserted only under the explicitly stated compatible strict-witness premise. Source identities, ordered logs, ownership installation and local-prefix completeness are trusted; Byzantine sources are outside the model. Public history is a function-level projection, and all processes share one host. There is no user study, workload prevalence claim, WAN benchmark, durable multi-host recovery result, or acceptance guarantee.
 
 The retained reference ledgers are inherited records of scholarly sources and reading depth, not a claim that the current build reread every paper. Upstream licenses and source provenance remain in `inputs/` and `docs/third-party.md`. Experimental code, scripts, proofs and inputs are directly present, not enclosed in another archive.
+
+## Manuscript diagrams
+
+The model and protocol schematics are drawn directly in Python as vector PDFs
+with embedded STIX fonts. They encode the stated relationships, not measured
+performance. To regenerate them with Python 3.9+ and Matplotlib:
+
+```sh
+python -B figures/draw_schematics.py --output figures
+```
