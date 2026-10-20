@@ -45,6 +45,19 @@ FORBIDDEN_PUBLICATION_SUBSTRINGS = (
 )
 
 
+def validate_publisher_files(paper):
+    """Check the exact retained publisher files without modifying either file."""
+    paper = Path(paper)
+    for name, expected in [
+        ('acmart.cls', '815eb82e1a2496a21a3f01d00b6945d865271403'),
+        ('ACM-Reference-Format.bst', '4f607da45ff04d5712f87a7a3308507dab41fac3'),
+    ]:
+        data = (paper / name).read_bytes()
+        identity = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+        if identity != expected:
+            raise ValueError('publisher file modified: ' + name)
+
+
 class ValidationError(AssertionError):
     """A release invariant did not hold."""
 
