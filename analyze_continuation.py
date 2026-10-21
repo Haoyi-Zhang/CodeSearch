@@ -240,6 +240,8 @@ def sensitivity_rows():
         path=path_for(case,1,active,capacity)
         if path in seen: continue
         seen.add(path); trace=load(path); n=len(trace['records'])
+        from result_metrics import trace_metrics
+        trace_metrics(trace)
         row={'analysis':kind,'case':case,'active_per_tick':active,'capacity':capacity,'queries':n,
              'repair_queries':sum(bool(r['observations']['continuation']['response'].get('repairs')) for r in trace['records']),
              'repair_shards':sum(len(r['observations']['continuation']['response'].get('repairs',{})) for r in trace['records'])}
@@ -261,6 +263,8 @@ def write_csv(path,rows):
 
 
 def write_latex(summary):
+    from result_metrics import validate_primary
+    validate_primary(ROOT,summary)
     p=summary['policies']; path=ROOT.parent/'paper/tables/generated-continuation-main.tex'
     labels={'continuation':'Continuation','overlay':'Exact overlay','cut-cache':'Cut-aware cache','mirror':'Full mirror','unsafe-stale':'Unsafe stale'}
     lines=['\\begin{tabular}{lrrrrr}','\\toprule','Policy & Complete & False & Bytes/query & Msg/query & State (KiB) \\\\','\\midrule']
@@ -279,6 +283,8 @@ def tex_number(value):
 
 
 def write_paper_outputs(summary,cases,sensitivity):
+    from result_metrics import validate_primary
+    cases=validate_primary(ROOT,summary)
     paper=ROOT.parent/'paper'; tables=paper/'tables'; figures=paper/'figures'
     tables.mkdir(parents=True,exist_ok=True); figures.mkdir(parents=True,exist_ok=True)
     policies=summary['policies']; cont=policies['continuation']; overlay=policies['overlay']

@@ -261,6 +261,8 @@ def aggregate(trace: dict, source: Counter, checked: Counter) -> dict:
 
 
 def write_paper_outputs(summary: dict) -> None:
+    from result_metrics import validate_real
+    validate_real(ROOT,summary)
     paper = ROOT.parent / "paper"
     if not paper.is_dir():
         return

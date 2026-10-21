@@ -18,7 +18,7 @@ Run from this directory:
 python -B run_all_validation.py
 ```
 
-The driver runs three complete bounded suites and then validates the evidence. It does not silently skip missing scripts. Detailed logs and actual timings are in `results/`; a failure returns a nonzero exit code. Individual entrypoints are `run_continuation_suite.py`, `run_real_history_suite.py`, and `run_suite.py`. `refresh_resource_ledger.py` synchronizes the resource notes after a run. `validate_release.py` checks the existing evidence without rerunning it. The paper directory is optional for scientific execution; `--paper-dir ../paper --project-root ..` adds manuscript checks after the paper is built.
+The driver runs three complete bounded suites and then validates the evidence. It does not silently skip missing scripts. Detailed logs and actual timings are in `results/`; a failure returns a nonzero exit code. Individual entrypoints are `run_continuation_suite.py`, `run_real_history_suite.py`, and `run_suite.py`. `refresh_resource_ledger.py` synchronizes the resource notes after a run. `validate_release.py` reconstructs primary and held-out byte/message totals and denominators from existing setup/feed/query records and rejects inconsistent summaries; it does not generate new campaigns. The paper directory is optional for scientific execution; `--paper-dir ../paper --project-root ..` additionally replays consumed incremental report/trace pairs and compares their table contents without writing them.
 
 For a read-only check of retained evidence, use
 `python -B validate_release.py --no-write`. A complete project root contains
@@ -83,6 +83,16 @@ and replays do not. All outputs stay in `results/`, apart from the two optional
 manuscript tables. These commands are separate from the retained Linux
 resource-contract driver and do not compile the paper. See
 `docs/incremental-comparison.md` for the input, counter and fairness definitions.
+Table generation binds the entire external report to its trace-embedded report
+and trial summaries, then actually replays every trial used in the table: source truth, checker transitions,
+oracle markers, phase costs, refills and source-work counts. It does not admit a
+report merely because an old PASS has the same call/trial counts. Historical
+`*-replay.json` receipts are preserved; explicit replay commands now default to
+`*-replay-current.json`, with exact report/trace identities from that execution.
+Receipts identify all selected trial indices; other capacity/lag combinations
+are bound by content but are not relabeled as freshly replayed. The standalone
+replay command still checks all trials. CPU and coordinator-work counters retain
+their stated independent-recount limits.
 The closest global-threshold extra-candidate/refill variant matches continuation
 on payloads, state and counted work. Published-history traffic is also equal
 for the local variant; only the supplied generated histories with initial

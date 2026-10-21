@@ -247,11 +247,24 @@ def parse_tex_macros(path: Path) -> dict[str, str]:
 
 
 def validate_paper_results(paper_dir: Path) -> dict[str, object]:
-    """Check that manuscript-facing generated numbers match retained JSON.
+    """Compare manuscript inputs with retained records and current replay.
 
-    This is intentionally independent of ``paper/sync_results.py`` so the
-    release gate does not merely trust the generator that produced the files.
+    Macro expectations are computed here; incremental table expectations reuse
+    the current independent replay and rendering contract in check-only mode.
     """
+    # Check exactly the values exported from complete, freshly replayed pairs;
+    # no historical receipt is edited and --no-write remains read-only.
+    from contextlib import redirect_stdout
+    import io
+    import generate_incremental_tables as incremental
+    previous=incremental.ROOT
+    try:
+        incremental.ROOT=ROOT
+        with redirect_stdout(io.StringIO()):
+            incremental.main(check_only=True,paper_dir=paper_dir)
+            incremental.main(ROOT/'results/incremental-audit',check_only=True,paper_dir=paper_dir)
+    finally:
+        incremental.ROOT=previous
     continuation = load_json(ROOT / "results/continuation-summary.json")
     real = load_json(ROOT / "results/real-history-summary.json")
     finite = continuation["finite_checks"]
@@ -413,6 +426,9 @@ def close(a: float, b: float) -> bool:
 
 def validate_results(check_reproductions: bool = True, check_trace_inventory: bool = True) -> dict[str, object]:
     continuation = load_json(ROOT / "results/continuation-summary.json")
+    from result_metrics import validate_primary, validate_real
+    validate_primary(ROOT, continuation)
+    validate_real(ROOT, load_json(ROOT / "results/real-history-summary.json"))
     require(isinstance(continuation, dict), "invalid continuation summary")
     policies = continuation["policies"]
     require(continuation["primary_queries"] == 4536, "primary query count changed")

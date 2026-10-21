@@ -1,5 +1,15 @@
 # Same-information incremental comparison
 
+Table export validates the complete report against the consumed trace and its
+embedded trial summaries, then runs the current independent semantic/source-work
+replay for every trial actually used in the table. Public-history rows use
+capacity 10/lag 2; generated refill and census rows use capacity 5. Other trials
+remain content-bound, not freshly replayed. The standalone replay checks all
+trials. An older PASS receipt is historical evidence, not permission to export
+different values with equal inventory counts. The standalone replay command
+defaults to a separate `*-replay-current.json`; table generation does not change
+old receipts. These replays do not regenerate histories or remeasure CPU fields.
+
 ## Policies and input equality
 
 All three policies receive the same prefix rows and next omitted key, immutable
