@@ -109,6 +109,21 @@ Scores/tails already had strict admission; these checks also cover equal-valued
 Boolean/real aliases elsewhere in the verifier. CPU fields are not a full
 initialization-and-maintenance CPU budget.
 
+Feed admission and compaction validate the complete proposed batch/vector before
+committing any state. This includes strict integer metadata rather than accepting
+Boolean or real aliases. Six owned in-memory methods cover late failures,
+unchanged state, valid retry, copied input ownership and slow-session retention:
+
+```sh
+python -B -m unittest discover -s tests -p test_feed_transactions.py -v
+```
+
+Token capacity bounds candidate rows, not the entire shared history. An idle
+token can pin that history; resetting query tokens releases only events outside
+the source-repair window. No automatic expiration service or new deployment
+measurement is claimed. Retained campaign timings remain distinct from these
+current-source regression checks.
+
 Fresh outputs, with original campaigns preserved, are under
 `results/incremental-audit/`. Reproduce them in a separate empty directory:
 

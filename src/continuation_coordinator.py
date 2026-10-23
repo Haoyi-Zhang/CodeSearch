@@ -18,18 +18,29 @@ class FeedStore:
         self.events: list[dict[int, dict]] = [dict(), dict(), dict()]
 
     def accept(self, receipt: dict) -> None:
-        shard = receipt['shard']
-        if receipt.get('kind') != 'events' or receipt['epoch'] != self.epoch:
+        if not isinstance(receipt, dict):
             raise ValueError('feed receipt binding')
-        if receipt['lo'] != self.frontiers[shard]:
+        shard = receipt.get('shard')
+        if (type(shard) is not int or shard not in range(3)
+                or receipt.get('kind') != 'events'
+                or type(receipt.get('epoch')) is not int or receipt['epoch'] != self.epoch):
+            raise ValueError('feed receipt binding')
+        if (type(receipt.get('lo')) is not int or type(receipt.get('hi')) is not int
+                or not 0 <= receipt['lo'] <= receipt['hi']
+                or receipt['lo'] != self.frontiers[shard]):
             raise ValueError('feed gap')
-        expected = list(range(receipt['lo'] + 1, receipt['hi'] + 1))
-        if [event['seq'] for event in receipt['events']] != expected:
+        events = receipt.get('events')
+        if not isinstance(events, list) or len(events) != receipt['hi'] - receipt['lo']:
             raise ValueError('feed sequence')
-        for event in receipt['events']:
-            if event['shard'] != shard:
+        staged = dict(self.events[shard])
+        for seq, event in enumerate(events, receipt['lo'] + 1):
+            if (not isinstance(event, dict) or type(event.get('seq')) is not int
+                    or event['seq'] != seq):
+                raise ValueError('feed sequence')
+            if type(event.get('shard')) is not int or event['shard'] != shard:
                 raise ValueError('feed shard')
-            self.events[shard][event['seq']] = deepcopy(event)
+            staged[event['seq']] = deepcopy(event)
+        self.events[shard] = staged
         self.frontiers[shard] = receipt['hi']
 
     def covers(self, shard: int, lo: int, hi: int) -> bool:
@@ -47,12 +58,14 @@ class FeedStore:
         """Discard events that every live token has already consumed."""
         if len(floors) != 3:
             raise ValueError('feed compaction vector')
+        staged = [dict(events) for events in self.events]
         for shard, floor in enumerate(floors):
             if type(floor) is not int or not self.base[shard] <= floor <= self.frontiers[shard]:
                 raise ValueError('feed compaction floor')
-            for seq in [seq for seq in self.events[shard] if seq <= floor]:
-                del self.events[shard][seq]
-            self.base[shard] = floor
+            for seq in [seq for seq in staged[shard] if seq <= floor]:
+                del staged[shard][seq]
+        self.events = staged
+        self.base = list(floors)
 
     def safe_compaction_floors(self, consumed: list[int]) -> list[int]:
         """Keep one full admitted journal window behind each frontier.
