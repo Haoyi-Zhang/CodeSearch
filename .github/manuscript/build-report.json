@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "scope": "template/build/citation/data consistency; not acceptance or universal correctness",
+  "journal": "ACM Transactions on Software Engineering and Methodology",
+  "class": "acmart 2.20 (2026-08-16)",
+  "mode": "manuscript,review",
+  "pages": 27,
+  "page_size": "US Letter",
+  "references": 68,
+  "missing_inputs": 0,
+  "undefined_references": 0,
+  "overfull_boxes": 0,
+  "all_fonts_embedded": true,
+  "required_generated_files": [
+    "reviewer_hardening_macros.tex",
+    "heldout_resource_macros.tex",
+    "source_cost_breakdown_table.tex",
+    "heldout_accounting_table.tex"
+  ],
+  "warnings": [
+    "Publisher reference strip withheld pending real author/rights/publication metadata; not a camera-ready submission."
+  ],
+  "bibliography_optional_metadata_warnings": [
+    "Warning--empty publisher in carney2002",
+    "Warning--empty address in carney2002",
+    "Warning--empty publisher in chaudhuri1999",
+    "Warning--empty address in chaudhuri1999",
+    "Warning--empty publisher in graphcodebert",
+    "Warning--empty address in graphcodebert",
+    "Warning--page numbers missing in both pages and numpages fields in graphcodebert",
+    "Warning--empty publisher in kafka",
+    "Warning--empty address in kafka",
+    "Warning--empty publisher in differential",
+    "Warning--empty address in differential",
+    "Warning--page numbers missing in both pages and numpages fields in esearch",
+    "Warning--empty address in yi2003topk"
+  ],
+  "data_export_log": [
+    "{\"report\": \"incremental-comparison\", \"verification\": {\"counts\": {\"event_rows\": 54, \"events\": 54, \"prefix\": 1188, \"results\": 2376, \"source_work_censuses\": 9, \"trials\": 9}, \"input_trials\": 54, \"replayed_trial_indices\": [9, 10, 11, 27, 28, 29, 45, 46, 47], \"report_sha256\": \"42c693c3f32a370bcf1a6d8382acecb4fc0ab7ce392b97d3f73ea40e1c03aed0\", \"result\": \"PASS\", \"scope\": \"Complete report/trace content bound; fresh source/checker/oracle/phase-cost/refill/source-work replay of listed trial indices. Unselected trials and CPU/coordinator counters are not independently recounted.\", \"trace_sha256\": \"3cb2f9bf41ecdba86f442f594497cf77a62abcfa5e512781c589429ff96d2f7e\"}}",
+    "{\"report\": \"incremental-generated\", \"verification\": {\"counts\": {\"event_rows\": 1134, \"events\": 1134, \"prefix\": 314, \"results\": 6048, \"source_work_censuses\": 6, \"trials\": 6}, \"input_trials\": 18, \"replayed_trial_indices\": [0, 1, 2, 9, 10, 11], \"report_sha256\": \"dc1759c62dcda4f0c684154affa427fe77e779cd69a503da2f5d74522a41b4a9\", \"result\": \"PASS\", \"scope\": \"Complete report/trace content bound; fresh source/checker/oracle/phase-cost/refill/source-work replay of listed trial indices. Unselected trials and CPU/coordinator counters are not independently recounted.\", \"trace_sha256\": \"bf0e931571bdaf4fbda5a6dd9fde1ec76a0a027f6afe0e8bec031427094f1eb3\"}}",
+    "{\"result\": \"PASS\", \"tables\": 2}",
+    "{\"report\": \"incremental-generated\", \"verification\": {\"counts\": {\"event_rows\": 1134, \"events\": 1134, \"prefix\": 314, \"results\": 6048, \"source_work_censuses\": 6, \"trials\": 6}, \"input_trials\": 18, \"replayed_trial_indices\": [0, 1, 2, 9, 10, 11], \"report_sha256\": \"cd94ee9ecc37a588a4981228d9e4d4d193225a92b8cdf6dee579f3ffe4095d49\", \"result\": \"PASS\", \"scope\": \"Complete report/trace content bound; fresh source/checker/oracle/phase-cost/refill/source-work replay of listed trial indices. Unselected trials and CPU/coordinator counters are not independently recounted.\", \"trace_sha256\": \"18a49bd524ce08ac7308f6ed4d22646b0fca79e81eda8ae63bb41ae4204c4e2d\"}}",
+    "{\"result\": \"PASS\", \"tables\": 1, \"freshly_replayed_table_trials\": 6}",
+    "{\"status\": \"PASS\", \"generated_files\": 4, \"paired_comparisons\": 3, \"references\": 68, \"tests\": 50}"
+  ]
+}
