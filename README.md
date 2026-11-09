@@ -1,5 +1,9 @@
 # Federated code search: continuation certificates
 
+To regenerate the manuscript diagrams, run `python -B figures/rebuild_diagrams.py`
+from this artifact directory in the project bundle. The command also updates the
+PDF copies read by the paper. Statistical figures use their own generators and inputs.
+
 This standalone artifact accompanies **Continuation Certificates for Federated Code Search under Repository Churn**, prepared for ACM Transactions on Software Engineering and Methodology (TOSEM). It implements target-cut checking and bounded state reuse for repeated ranked queries. It does not implement a new semantic ranker or production search service.
 
 ## Reproduction

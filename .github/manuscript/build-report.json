@@ -1,10 +1,10 @@
 {
   "status": "PASS",
-  "scope": "template/build/citation/data consistency; not acceptance or universal correctness",
+  "scope": "Current isolated TeX build and plot table verification; retained experiment data unchanged.",
   "journal": "ACM Transactions on Software Engineering and Methodology",
   "class": "acmart 2.20 (2026-08-16)",
   "mode": "manuscript,review",
-  "pages": 27,
+  "pages": 26,
   "page_size": "US Letter",
   "references": 68,
   "missing_inputs": 0,
@@ -21,9 +21,7 @@
     "Publisher reference strip withheld pending real author/rights/publication metadata; not a camera-ready submission."
   ],
   "bibliography_optional_metadata_warnings": [
-    "Warning--empty publisher in carney2002",
     "Warning--empty address in carney2002",
-    "Warning--empty publisher in chaudhuri1999",
     "Warning--empty address in chaudhuri1999",
     "Warning--empty publisher in graphcodebert",
     "Warning--empty address in graphcodebert",
@@ -42,5 +40,6 @@
     "{\"report\": \"incremental-generated\", \"verification\": {\"counts\": {\"event_rows\": 1134, \"events\": 1134, \"prefix\": 314, \"results\": 6048, \"source_work_censuses\": 6, \"trials\": 6}, \"input_trials\": 18, \"replayed_trial_indices\": [0, 1, 2, 9, 10, 11], \"report_sha256\": \"cd94ee9ecc37a588a4981228d9e4d4d193225a92b8cdf6dee579f3ffe4095d49\", \"result\": \"PASS\", \"scope\": \"Complete report/trace content bound; fresh source/checker/oracle/phase-cost/refill/source-work replay of listed trial indices. Unselected trials and CPU/coordinator counters are not independently recounted.\", \"trace_sha256\": \"18a49bd524ce08ac7308f6ed4d22646b0fca79e81eda8ae63bb41ae4204c4e2d\"}}",
     "{\"result\": \"PASS\", \"tables\": 1, \"freshly_replayed_table_trials\": 6}",
     "{\"status\": \"PASS\", \"generated_files\": 4, \"paired_comparisons\": 3, \"references\": 68, \"tests\": 50}"
-  ]
+  ],
+  "data_export_log_scope": "Retained verification of unchanged experiment data; not re-executed by this manuscript build."
 }

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "checker-owned-state",
+    "kind": "route",
+    "rows": [
+      {
+        "name": "",
+        "nodes": [
+          [
+            "Bound|receipt",
+            "receipt"
+          ],
+          [
+            "Replay",
+            "tool"
+          ],
+          [
+            "Derive token",
+            "grid"
+          ],
+          [
+            "Verify|answer",
+            "compare"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feed-retention-boundary",
+    "kind": "fork",
+    "source": [
+      "Minimum|live cursor",
+      "index"
+    ],
+    "outcomes": [
+      [
+        [
+          "Eligible to trim|Subject to repair window",
+          "mask"
+        ],
+        "At or before cursor"
+      ],
+      [
+        [
+          "Keep receipt|Still needed for replay",
+          "receipt"
+        ],
+        "After cursor"
+      ]
+    ]
+  }
+]

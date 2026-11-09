@@ -1,0 +1,109 @@
+{
+  "project": "CodeSearch_TOSEM",
+  "figures": [
+    {
+      "asset": "protocol",
+      "media": [
+        428.0,
+        180.0
+      ],
+      "width": 411.3,
+      "trim": [
+        0,
+        17,
+        0,
+        17
+      ],
+      "targets": [
+        "artifact/figures/illustrations/protocol.pdf",
+        "artifact/figures/protocol.pdf"
+      ]
+    },
+    {
+      "asset": "continuation-cut",
+      "media": [
+        428.0,
+        153.0
+      ],
+      "width": 402.7,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "paper/figures/illustrations/continuation-cut.pdf",
+        "paper/figures/continuation-cut.pdf"
+      ]
+    },
+    {
+      "asset": "running-example",
+      "media": [
+        360.0,
+        107.0
+      ],
+      "width": 359.9,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "paper/figures/running-example.pdf"
+      ]
+    },
+    {
+      "asset": "target-cut-certification",
+      "media": [
+        408.0,
+        105.0
+      ],
+      "width": 377.0,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "artifact/figures/target-cut-certification.pdf"
+      ]
+    },
+    {
+      "asset": "checker-owned-state",
+      "media": [
+        426.0,
+        55.0
+      ],
+      "width": 428.4,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "artifact/figures/checker-owned-state.pdf"
+      ]
+    },
+    {
+      "asset": "feed-retention-boundary",
+      "media": [
+        426.0,
+        112.0
+      ],
+      "width": 428.4,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "artifact/figures/feed-retention-boundary.pdf"
+      ]
+    }
+  ]
+}
